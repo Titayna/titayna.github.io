@@ -4,15 +4,15 @@
     "label": "PhD Candidate in Digital Humanities & History",
     "image": "",
     "email": "titayna.kauffman@gmail.com",
-    "phone": "(+41) 79 632 36 60",
-    "url": "https://github.com/Titayna",
+    "phone": "",
+    "url": "https://titayna.github.io/",
     "summary": "Doctoral researcher at C\u00b2DH. Background in political science and history, with a focus on digital humanities. Experienced research assistant with interests in historical source analysis, digital preservation, and computing for history.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Lausanne",
-      "countryCode": "CH",
-      "region": "Vaud"
+      "city": "Luxembourg",
+      "countryCode": "",
+      "region": ""
     },
     "profiles": [
       {
@@ -57,14 +57,14 @@
       "summary": "Contributed to the SINERGIA project on elites in Switzerland; archival work and database entry."
     },
     {
-      "name": "Swiss Elite Observatory \u2013 UniL",
+      "name": "Swiss Elite Observatory UniL",
       "position": "Student Researcher Assistant",
       "startDate": "2020-06-01",
       "endDate": "2020-10-01",
       "summary": "Entered and processed data for research on Swiss elites in multiple fields."
     },
     {
-      "name": "PrEP School \u2013 Lausanne",
+      "name": "PrEP School Lausanne",
       "position": "Political Science Teacher",
       "startDate": "2017-02-01",
       "endDate": "2018-07-01",
