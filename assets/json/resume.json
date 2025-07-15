@@ -78,21 +78,6 @@
       "summary": "Managed Master\u2019s application files, handled departmental correspondence, and performed clerical support."
     }
   ],
-  "volunteer": [
-    {
-      "organization": "",
-      "location": "",
-      "position": "",
-      "url": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "",
-        ""
-      ]
-    }
-  ],
   "education": [
     {
       "institution": "Lausanne University",
@@ -125,117 +110,117 @@
       "summary": ""
     }
   ],
-"certificates": [
-  {
-    "name": "Cambridge English Qualifications - First (FCE)",
-    "date": "2014-01-01",
-    "issuer": "Cambridge English",
-    "url": ""
-  },
-  {
-    "name": "FileMaker Pro Course",
-    "date": "2020-01-01",
-    "issuer": "IT Centre of the University of Lausanne",
-    "url": ""
-  },
-  {
-    "name": "Introduction to Prompt Engineering (edX Verified Certificate)",
-    "date": "2024-01-01",
-    "issuer": "edX",
-    "url": "https://courses.edx.org/certificates/2558c95736c04f6295717e54ccfe4128"
-  },
-  {
-    "name": "Machine Learning Basics (edX Verified Certificate)",
-    "date": "2024-01-01",
-    "issuer": "edX",
-    "url": "https://courses.edx.org/certificates/d54afda00db24409b142b9894293110d"
-  },
-  {
-    "name": "Quantum Computing Foundations (edX Verified Certificate)",
-    "date": "2024-01-01",
-    "issuer": "edX",
-    "url": "https://courses.edx.org/certificates/951b99cba9c04bc39752a0f9f326e5b6"
-  }
-],
-"publications": [
-{
-  "name": "",
-  "publisher": "",
-  "releaseDate": "",
-  "url": "",
-  "summary": ""
-}
-],
-"skills": [
-{
-  "name": "Technical",
-  "keywords": [
-    "Office Suite (Open Office, iWork, Microsoft Office, Google Office)",
-    "Adobe Photoshop",
-    "FileMaker",
-    "JavaScript",
-    "Python 3",
-    "SQL",
-    "Unity (C#)",
-    "Inkle"
-  ]
-},
-{
-  "name": "Professional",
-  "keywords": [
-    "Analytical and synthetic thinking",
-    "Adaptability and autonomy",
-    "Collaboration",
-    "Attention to detail",
-    "Innovation"
-  ]
-}
-],
-"languages": [
-{
-  "language": "",
-  "fluency": "",
-  "icon": ""
-},
-{
-  "language": "",
-  "fluency": "",
-  "icon": ""
-}
-],
-"interests": [
-{
-  "name": "",
-  "icon": "",
-  "keywords": [
-    "",
-    ""
-  ]
-}
-],
-"references": [
-{
-  "name": "",
-  "icon": "",
-  "reference": ""
-},
-{
-  "name": "",
-  "icon": "",
-  "reference": ""
-}
-],
-"projects": [
-{
-  "name": "",
-  "summary": "",
-  "highlights": [
-    "",
-    ""
+  "certificates": [
+    {
+      "name": "Cambridge English Qualifications - First (FCE)",
+      "date": "2014-01-01",
+      "issuer": "Cambridge English",
+      "url": ""
+    },
+    {
+      "name": "FileMaker Pro Course",
+      "date": "2020-01-01",
+      "issuer": "IT Centre of the University of Lausanne",
+      "url": ""
+    },
+    {
+      "name": "Introduction to Prompt Engineering (edX Verified Certificate)",
+      "date": "2024-01-01",
+      "issuer": "edX",
+      "url": "https://courses.edx.org/certificates/2558c95736c04f6295717e54ccfe4128"
+    },
+    {
+      "name": "Machine Learning Basics (edX Verified Certificate)",
+      "date": "2024-01-01",
+      "issuer": "edX",
+      "url": "https://courses.edx.org/certificates/d54afda00db24409b142b9894293110d"
+    },
+    {
+      "name": "Quantum Computing Foundations (edX Verified Certificate)",
+      "date": "2024-01-01",
+      "issuer": "edX",
+      "url": "https://courses.edx.org/certificates/951b99cba9c04bc39752a0f9f326e5b6"
+    }
   ],
-  "startDate": "",
-  "endDate": "",
-  "url": ""
-}
-]
+  "publications": [
+  {
+    "name": "",
+    "publisher": "",
+    "releaseDate": "",
+    "url": "",
+    "summary": ""
+  }
+  ],
+  "skills": [
+  {
+    "name": "Technical",
+    "keywords": [
+      "Office Suite (Open Office, iWork, Microsoft Office, Google Office)",
+      "Adobe Photoshop",
+      "FileMaker",
+      "JavaScript",
+      "Python 3",
+      "SQL",
+      "Unity (C#)",
+      "Inkle"
+    ]
+  },
+  {
+    "name": "Professional",
+    "keywords": [
+      "Analytical and synthetic thinking",
+      "Adaptability and autonomy",
+      "Collaboration",
+      "Attention to detail",
+      "Innovation"
+    ]
+  }
+  ],
+  "languages": [
+  {
+    "language": "",
+    "fluency": "",
+    "icon": ""
+  },
+  {
+    "language": "",
+    "fluency": "",
+    "icon": ""
+  }
+  ],
+  "interests": [
+  {
+    "name": "",
+    "icon": "",
+    "keywords": [
+      "",
+      ""
+    ]
+  }
+  ],
+  "references": [
+  {
+    "name": "",
+    "icon": "",
+    "reference": ""
+  },
+  {
+    "name": "",
+    "icon": "",
+    "reference": ""
+  }
+  ],
+  "projects": [
+  {
+    "name": "",
+    "summary": "",
+    "highlights": [
+      "",
+      ""
+    ],
+    "startDate": "",
+    "endDate": "",
+    "url": ""
+  }
+  ]
 }
