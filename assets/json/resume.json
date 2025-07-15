@@ -101,15 +101,6 @@
       "endDate": "2020-12-31"
     }
   ],
-  "awards": [
-    {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "url": "",
-      "summary": ""
-    }
-  ],
   "certificates": [
     {
       "name": "Cambridge English Qualifications - First (FCE)",
@@ -155,24 +146,13 @@
   {
     "name": "Technical",
     "keywords": [
-      "Office Suite (Open Office, iWork, Microsoft Office, Google Office)",
-      "Adobe Photoshop",
-      "FileMaker",
-      "JavaScript",
-      "Python 3",
-      "SQL",
-      "Unity (C#)",
-      "Inkle"
+      "This is a technical skill"
     ]
   },
   {
     "name": "Professional",
     "keywords": [
-      "Analytical and synthetic thinking",
-      "Adaptability and autonomy",
-      "Collaboration",
-      "Attention to detail",
-      "Innovation"
+      "This is a professional skill"
     ]
   }
   ],
@@ -208,19 +188,6 @@
     "name": "",
     "icon": "",
     "reference": ""
-  }
-  ],
-  "projects": [
-  {
-    "name": "",
-    "summary": "",
-    "highlights": [
-      "",
-      ""
-    ],
-    "startDate": "",
-    "endDate": "",
-    "url": ""
   }
   ]
 }
