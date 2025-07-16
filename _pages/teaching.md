@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching
+title: TEACHING
 description: This section in under construction. 
 nav: true
 nav_order: 6
