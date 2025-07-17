@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Source code exhibition
+description: Heritagisation of code
 img:
-importance: 3
-category: fun
+importance: 4
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
