@@ -25,9 +25,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+My academic work lies at the intersection of history, political science, and digital humanities. I hold two Master’s degrees from the University of Lausanne—one in Political Science and International History, and another in Digital Humanities and History. Over the past several years, I’ve held research assistant positions at Swiss institutions including EPFL, the University of Zurich, and the Swiss Elite Observatory, working on digitization initiatives, archival research, and historical database development. These experiences have shaped my methodological versatility and deepened my interest in studying computational practices and digital artifacts as cultural-historical sources.
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+I’m currently a PhD candidate at the [Luxembourg Centre for Contemporary and Digital History (C²DH)](https://www.c2dh.uni.lu/) at the University of Luxembourg, under the supervision of [Professor Valérie Schafer](https://www.c2dh.uni.lu/people/valerie-schafer). The C²DH is a leading interdisciplinary centre dedicated to exploring contemporary history through innovative digital and humanistic methods.
+
+Within the C²DH, I am part of the [Deep Data Science of Digital History (D4H)](https://d4h.uni.lu/) Doctoral Training Unit—a PRIDE‑funded consortium that brings together expertise from history, data science, and computer science to train doctoral researchers in critical data analytics, visualization, and digital hermeneutics.
 
 <div markdown="1" style="text-align: center;">
 
@@ -38,3 +40,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 ▝▚▄▄▖▝▚▄▞▘▐▙▄▄▀▐▙▄▄▖    ▐▌ ▐▌▗▄▄▞▘    ▐▌ ▐▌    ▗▄▄▞▘▝▚▄▞▘▝▚▄▞▘▐▌ ▐▌▝▚▄▄▖▐▙▄▄▖
 ```
 </div>
+
+My doctoral thesis, *Code as a Source*, explores how software source code can be approached as a historical primary source and a form of digital heritage. The project interrogates both the practical dimensions of code preservation and the epistemological questions it raises for historical interpretation. Drawing from methodologies in digital humanities, media archaeology, and the history of technology, I examine how code reflects the socio-technical contexts of its production: its embedded assumptions, aesthetics, constraints, and ideological undercurrents. 
+
+The research engages with case studies of historically significant software projects to analyze how code articulates relationships between authorship, labor, and technological imagination. By reading code as a cultural text—as something written, revised, commented, and maintained—I investigate how it embodies practices of collaboration, innovation, and control. Ultimately, the thesis contributes to emerging scholarship that positions code not only as a tool or object of study but as a narrative and symbolic form, expanding what counts as historical evidence in the digital age.
