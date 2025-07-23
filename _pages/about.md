@@ -29,7 +29,6 @@ I’m currently a PhD candidate at the [Luxembourg Centre for Contemporary and D
 
 My academic background spans history, political science, and digital humanities. I hold two Master’s degrees from the University of Lausanne, and have worked on research and archival projects at institutions including EPFL, the University of Zurich, and the Swiss Elite Observatory. These experiences have shaped my interest in understanding software, code, and other digital artifacts as both technical objects and historical sources.
 
-
 <div markdown="1" style="text-align: center;">
 
 ```text
