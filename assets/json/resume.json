@@ -32,7 +32,7 @@
       "position": "Student Researcher Assistant",
       "startDate": "2022-03-01",
       "endDate": "2025-07-15",
-      "summary": "Worked on the [Lausanne Time Machine project](https://www.epfl.ch/schools/cdh/time-machine-unit/) at EPFL, correcting OCR and HTR digitization of 19th-century cadastral records for the State of Vaud, ensuring accuracy by cross-referencing software output with historical sources."
+      "summary": "Worked on the <a href=\"https://www.epfl.ch/schools/cdh/time-machine-unit/\">Lausanne Time Machine project</a> at EPFL, correcting OCR and HTR digitization of 19th-century cadastral records for the State of Vaud, ensuring accuracy by cross-referencing software output with historical sources."
     },
     {
       "name": "Fribourg State Court",
@@ -46,21 +46,21 @@
       "position": "Student Researcher Assistant",
       "startDate": "2019-12-01",
       "endDate": "2022-03-01",
-      "summary": "Supported the [FNS project 'Measuring Economic Growth and Welfare in 19th Century Switzerland'](https://data.snf.ch/grants/grant/182294) by consulting archival records, extracting historical economic data, and designing data collection templates."
+      "summary": "Supported the <a href=\"https://data.snf.ch/grants/grant/182294\">FNS project 'Measuring Economic Growth and Welfare in 19th Century Switzerland'</a> by consulting archival records, extracting historical economic data, and designing data collection templates."
     },
     {
-      "name": "Institute of Political Studies (IEP) – UniL",
+      "name": "Institute of Political Studies (IEP) – University of Lausanne",
       "position": "Student Researcher Assistant",
       "startDate": "2019-09-01",
       "endDate": "2020-11-01",
-      "summary": "Worked on the [FNS project 'Local Power Structures and Transnational Connections. New Perspectives on Elites in Switzerland, 1890–2020'](https://data.snf.ch/grants/grant/183534), contributing to archival research, biographical database development, and conceptual discussions within the team."
+      "summary": "Worked on the <a href=\"https://data.snf.ch/grants/grant/183534\">FNS project 'Local Power Structures and Transnational Connections. New Perspectives on Elites in Switzerland, 1890–2020'</a>, contributing to archival research, biographical database development, and conceptual discussions within the team."
     },
     {
-      "name": "Swiss Elite Observatory – UniL",
+      "name": "Swiss Elite Observatory – University of Lausanne",
       "position": "Student Researcher Assistant",
       "startDate": "2020-06-01",
       "endDate": "2020-10-01",
-      "summary": "Researched and inputted biographical data on Swiss elites from 20th and 21st centuries into the project's structured database."
+      "summary": "Researched and inputted biographical data on Swiss elites from the 20th and 21st centuries into the <a href=\"https://www.unil.ch/obelis/en/home.html\">project's structured database</a>."
     },
     {
       "name": "PrEP School – Lausanne",
