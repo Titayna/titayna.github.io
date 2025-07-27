@@ -445,9 +445,9 @@ ninja.data = [{
               window.location.href = "/projects/4_project/";
             },},{id: "ressources-prompt-engineering-guidebook",
           title: 'Prompt Engineering Guidebook',
-          description: "",
+          description: "A compact guide to writing prompts for generative AI models.",
           section: "Ressources",handler: () => {
-              window.location.href = "/ressources/1_ressources/";
+              window.location.href = "/ressources/prompt-guidebook/";
             },},{
         id: 'social-email',
         title: 'email',
