@@ -443,6 +443,11 @@ ninja.data = [{
           description: "Heritagisation of code",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
+            },},{id: "ressources-prompt-engineering-guidebook",
+          title: 'Prompt Engineering Guidebook',
+          description: "",
+          section: "Ressources",handler: () => {
+              window.location.href = "/ressources/1_ressources/";
             },},{
         id: 'social-email',
         title: 'email',
