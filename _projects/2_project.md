@@ -4,7 +4,7 @@ title: Love Letter Generator (1953)
 description: Case study
 img:
 importance: 2
-category: Current
+category: CURRENT
 giscus_comments: true
 ---
 
