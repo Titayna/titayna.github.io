@@ -4,15 +4,15 @@
     "label": "PhD Candidate in History",
     "image": "",
     "email": "titayna.kauffman@gmail.com",
-    "phone": "",
+    "phone": "+41 79 632 36 60",
     "url": "https://titayna.github.io/",
-    "summary": "Doctoral researcher at C2DH. Background in political science and history, with a focus on digital humanities. Experienced research assistant with interests in historical source analysis, digital preservation, and computing for history.",
+    "summary": "Doctoral researcher at C²DH with a multidisciplinary background in political science, history, and digital humanities. Experienced in archival research, historical data analysis, and computational tools. Passionate about the cultural significance of code and digital artifacts as historical sources.",
     "location": {
       "address": "",
       "postalCode": "",
       "city": "Luxembourg",
-      "countryCode": "",
-      "region": ""
+      "countryCode": "LU",
+      "region": "Luxembourg"
     },
     "profiles": [
       {
@@ -33,49 +33,49 @@
       "position": "Student Researcher Assistant",
       "startDate": "2022-03-01",
       "endDate": "2025-07-15",
-      "summary": "Worked on the Lausanne Time Machine project correcting historical digitization using HTR."
+      "summary": "Worked on the [Lausanne Time Machine project](https://www.epfl.ch/schools/cdh/time-machine-unit/) at EPFL, correcting OCR and HTR digitization of 19th-century cadastral records for the State of Vaud, ensuring accuracy by cross-referencing software output with historical sources."
     },
     {
       "name": "Fribourg State Court",
       "position": "Intern",
       "startDate": "2021-04-01",
       "endDate": "2021-09-01",
-      "summary": "Classified archives, authored public exhibition texts, and identified locations in historical photographs."
+      "summary": "Organized and enriched the classification plan of judicial archives, contributed to public historical notices for an exhibition, and cross-referenced photos with archival maps."
     },
     {
       "name": "University of Zurich",
       "position": "Student Researcher Assistant",
       "startDate": "2019-12-01",
       "endDate": "2022-03-01",
-      "summary": "Collected historical economic data for the FNS project on 19th century Swiss growth and welfare."
+      "summary": "Supported the [FNS project 'Measuring Economic Growth and Welfare in 19th Century Switzerland'](https://data.snf.ch/grants/grant/182294) by consulting archival records, extracting historical economic data, and designing data collection templates."
     },
     {
-      "name": "Institute of Political Studies (IEP) \u2013 UniL",
+      "name": "Institute of Political Studies (IEP) – UniL",
       "position": "Student Researcher Assistant",
       "startDate": "2019-09-01",
       "endDate": "2020-11-01",
-      "summary": "Contributed to the SINERGIA project on elites in Switzerland; archival work and database entry."
+      "summary": "Worked on the [FNS project 'Local Power Structures and Transnational Connections. New Perspectives on Elites in Switzerland, 1890–2020'](https://data.snf.ch/grants/grant/183534), contributing to archival research, biographical database development, and conceptual discussions within the team."
     },
     {
-      "name": "Swiss Elite Observatory UniL",
+      "name": "Swiss Elite Observatory – UniL",
       "position": "Student Researcher Assistant",
       "startDate": "2020-06-01",
       "endDate": "2020-10-01",
-      "summary": "Entered and processed data for research on Swiss elites in multiple fields."
+      "summary": "Researched and inputted biographical data on Swiss elites from 20th and 21st centuries into the project's structured database."
     },
     {
-      "name": "PrEP School Lausanne",
+      "name": "PrEP School – Lausanne",
       "position": "Political Science Teacher",
       "startDate": "2017-02-01",
       "endDate": "2018-07-01",
-      "summary": "Prepared students for university entrance exams; created constitutional law materials and mock exams."
+      "summary": "Prepared students for university entrance exams; led workshops on constitutional law; compiled answers to exam questions for Switzerland, France, England, and the US."
     },
     {
       "name": "Admission Office, University of Lausanne",
       "position": "Specialized File Manager and Administrative Assistant",
       "startDate": "2017-02-01",
       "endDate": "2019-09-01",
-      "summary": "Managed Master\u2019s application files, handled departmental correspondence, and performed clerical support."
+      "summary": "Reviewed and processed Master’s applications, handled departmental correspondence, and performed clerical support."
     }
   ],
   "education": [
@@ -99,6 +99,20 @@
       "studyType": "Bachelor",
       "startDate": "2018-01-01",
       "endDate": "2020-12-31"
+    },
+    {
+      "institution": "Lausanne",
+      "area": "University Entrance Exams (Prep School)",
+      "studyType": "Preparatory Education",
+      "startDate": "2014-01-01",
+      "endDate": "2014-12-31"
+    },
+    {
+      "institution": "Fribourg",
+      "area": "Socio-educational Field",
+      "studyType": "Certificate of General Knowledge",
+      "startDate": "2013-01-01",
+      "endDate": "2013-12-31"
     }
   ],
   "certificates": [
@@ -133,54 +147,46 @@
       "url": "https://courses.edx.org/certificates/951b99cba9c04bc39752a0f9f326e5b6"
     }
   ],
-  "publications": [
-    {
-      "name": "",
-      "publisher": "",
-      "releaseDate": "",
-      "url": "",
-      "summary": ""
-    }
-  ],
   "skills": [
     {
       "name": "Technical",
-      "keywords": ["This is a technical skill"]
+      "keywords": ["Python 3", "SQL", "JavaScript", "Unity (C#)", "Inkle", "FileMaker", "Adobe Photoshop", "Prompt Engineering for Generative AI"]
     },
     {
       "name": "Professional",
-      "keywords": ["This is a professional skill"]
+      "keywords": [
+        "Analytical and synthetic thinking",
+        "Autonomy and adaptability",
+        "Digital literacy",
+        "Collaboration",
+        "Innovation",
+        "Attention to detail"
+      ]
     }
   ],
   "languages": [
     {
-      "language": "",
-      "fluency": "",
-      "icon": ""
+      "language": "French",
+      "fluency": "Native",
+      "icon": "🇫🇷"
     },
     {
-      "language": "",
-      "fluency": "",
-      "icon": ""
+      "language": "English",
+      "fluency": "Full professional proficiency",
+      "icon": "🇬🇧"
     }
   ],
   "interests": [
     {
-      "name": "",
-      "icon": "",
-      "keywords": ["", ""]
-    }
-  ],
-  "references": [
-    {
-      "name": "",
-      "icon": "",
-      "reference": ""
+      "name": "History and Digital Methods",
+      "icon": "📜",
+      "keywords": ["Digital preservation", "Historical methods", "Computational history"]
     },
     {
-      "name": "",
-      "icon": "",
-      "reference": ""
+      "name": "Technology and Culture",
+      "icon": "💻",
+      "keywords": ["Critical code studies", "Digital heritage", "Software as cultural artifact"]
     }
-  ]
+  ],
+  "references": []
 }
