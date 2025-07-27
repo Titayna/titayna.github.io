@@ -1,11 +1,11 @@
 ---
 layout: page
-title: PROJECTS
-permalink: /projects/
+title: RESSOURCES
+permalink: /ressources/
 description:
 nav: true
 nav_order: 3
-display_categories: [CURRENT]
+display_categories: [TEMPLATES, GUIDEBOOK]
 horizontal: false
 ---
 
