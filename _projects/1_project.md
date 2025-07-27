@@ -2,7 +2,7 @@
 layout: page
 title: Apple Lisa (1983)
 description: Case study
-img: assets/img/12.jpg
+img:
 importance: 1
 category: work
 related_publications: true

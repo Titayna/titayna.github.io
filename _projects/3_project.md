@@ -2,7 +2,7 @@
 layout: page
 title: Ranke.2
 description: Teaching
-img: assets/img/7.jpg
+img:
 importance: 3
 category: work
 ---
