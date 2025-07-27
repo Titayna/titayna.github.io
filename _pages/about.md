@@ -33,10 +33,11 @@ My academic background spans history, political science, and digital humanities.
 
 ```text
  ▗▄▄▖ ▗▄▖ ▗▄▄▄ ▗▄▄▄▖     ▗▄▖  ▗▄▄▖     ▗▄▖      ▗▄▄▖ ▗▄▖ ▗▖ ▗▖▗▄▄▖  ▗▄▄▖▗▄▄▄▖
-▐▌   ▐▌ ▐▌▐▌  █▐▌       ▐▌ ▐▌▐▌       ▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌   
+▐▌   ▐▌ ▐▌▐▌  █▐▌       ▐▌ ▐▌▐▌       ▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌
 ▐▌   ▐▌ ▐▌▐▌  █▐▛▀▀▘    ▐▛▀▜▌ ▝▀▚▖    ▐▛▀▜▌     ▝▀▚▖▐▌ ▐▌▐▌ ▐▌▐▛▀▚▖▐▌   ▐▛▀▀▘
 ▝▚▄▄▖▝▚▄▞▘▐▙▄▄▀▐▙▄▄▖    ▐▌ ▐▌▗▄▄▞▘    ▐▌ ▐▌    ▗▄▄▞▘▝▚▄▞▘▝▚▄▞▘▐▌ ▐▌▝▚▄▄▖▐▙▄▄▖
 ```
+
 </div>
 
 My thesis, Code as a Source, investigates how software source code can serve as both a historical source and a form of digital heritage. It addresses questions of preservation, interpretation, and the epistemological status of code within historiography. Through case studies of significant software projects, I explore how code reveals its cultural and political context—its embedded values, collaborative structures, and technical assumptions. Treating code as a textual and material artifact, my research reframes it as a site of historical meaning and challenges established boundaries of what historians consider archival evidence in the digital era.

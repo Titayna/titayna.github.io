@@ -134,60 +134,53 @@
     }
   ],
   "publications": [
-  {
-    "name": "",
-    "publisher": "",
-    "releaseDate": "",
-    "url": "",
-    "summary": ""
-  }
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
+    }
   ],
   "skills": [
-  {
-    "name": "Technical",
-    "keywords": [
-      "This is a technical skill"
-    ]
-  },
-  {
-    "name": "Professional",
-    "keywords": [
-      "This is a professional skill"
-    ]
-  }
+    {
+      "name": "Technical",
+      "keywords": ["This is a technical skill"]
+    },
+    {
+      "name": "Professional",
+      "keywords": ["This is a professional skill"]
+    }
   ],
   "languages": [
-  {
-    "language": "",
-    "fluency": "",
-    "icon": ""
-  },
-  {
-    "language": "",
-    "fluency": "",
-    "icon": ""
-  }
+    {
+      "language": "",
+      "fluency": "",
+      "icon": ""
+    },
+    {
+      "language": "",
+      "fluency": "",
+      "icon": ""
+    }
   ],
   "interests": [
-  {
-    "name": "",
-    "icon": "",
-    "keywords": [
-      "",
-      ""
-    ]
-  }
+    {
+      "name": "",
+      "icon": "",
+      "keywords": ["", ""]
+    }
   ],
   "references": [
-  {
-    "name": "",
-    "icon": "",
-    "reference": ""
-  },
-  {
-    "name": "",
-    "icon": "",
-    "reference": ""
-  }
+    {
+      "name": "",
+      "icon": "",
+      "reference": ""
+    },
+    {
+      "name": "",
+      "icon": "",
+      "reference": ""
+    }
   ]
 }
