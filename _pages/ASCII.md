@@ -40,4 +40,3 @@
 
 
         https://onlinetools.com/ascii/convert-ascii-to-image
-
