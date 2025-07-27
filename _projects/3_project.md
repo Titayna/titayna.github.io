@@ -8,6 +8,8 @@ importance: 3
 category: work
 ---
 
+{% raw %}
+
 <div markdown="1" style="text-align: left;">
 
 ```text
@@ -42,3 +44,5 @@ category: work
 ```
 
 </div>
+
+{% endraw %}
