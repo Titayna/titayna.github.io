@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Prompt Engineering Guidebook
-description:
+description: A compact guide to writing prompts for generative AI models.
 img:
 importance: 1
 category: GUIDEBOOK
 related_publications: true
+permalink: /ressources/prompt-guidebook/
 ---
 
 Every project has a beautiful feature showcase page.
