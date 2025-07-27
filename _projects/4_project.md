@@ -4,7 +4,7 @@ title: Source code exhibition
 description: Heritagisation of code
 img:
 importance: 4
-category: work
+category: CURRENT
 ---
 
 Every project has a beautiful feature showcase page.

@@ -4,7 +4,7 @@ title: Apple Lisa (1983)
 description: Case study
 img:
 importance: 1
-category: work
+category: Current
 related_publications: true
 ---
 

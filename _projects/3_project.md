@@ -4,7 +4,7 @@ title: Ranke.2
 description: Teaching
 img:
 importance: 3
-category: work
+category: CURRENT
 ---
 
 Every project has a beautiful feature showcase page.
