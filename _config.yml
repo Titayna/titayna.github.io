@@ -160,6 +160,8 @@ collections:
     output: true
   projects:
     output: true
+  ressources:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
