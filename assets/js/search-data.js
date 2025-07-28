@@ -447,12 +447,12 @@ ninja.data = [{
           title: 'Prompt Engineering Guidebook',
           description: "A compact guide to writing prompts for generative AI models.",
           section: "Ressources",handler: () => {
-              window.location.href = "/ressources/prompt-guidebook/";
+              window.location.href = "/ressources/1_ressources/";
             },},{id: "ressources-notion-template-for-phd-planning",
           title: 'Notion Template for PhD Planning',
           description: "A customizable Notion planner designed to help PhD students track their research, deadlines, publications, and goals in one structured space.",
           section: "Ressources",handler: () => {
-              window.location.href = "/ressources/phd-notion-template/";
+              window.location.href = "/ressources/2_ressources/";
             },},{
         id: 'social-email',
         title: 'email',
