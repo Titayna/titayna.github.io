@@ -6,7 +6,6 @@ img:
 importance: 1
 category: GUIDEBOOK
 related_publications: true
-permalink: /ressources/prompt-guidebook/
 ---
 
 Every project has a beautiful feature showcase page.
