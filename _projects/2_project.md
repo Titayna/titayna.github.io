@@ -2,7 +2,7 @@
 layout: page
 title: Love Letter Generator (1953)
 description: Case study
-img:
+img: assets/img/cover_strachey.png
 importance: 2
 category: CURRENT
 giscus_comments: true
