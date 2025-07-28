@@ -30,14 +30,14 @@ I’m currently a PhD candidate at the [Luxembourg Centre for Contemporary and D
 My academic background spans history, political science, and digital humanities. I hold two Master’s degrees from the University of Lausanne, and have worked on research and archival projects at institutions including EPFL, the University of Zurich, and the Swiss Elite Observatory. These experiences have shaped my interest in understanding software, code, and other digital artifacts as both technical objects and historical sources.
 
 <div markdown="1" style="text-align: center;">
-
+{% raw %}
 ```text
  ▗▄▄▖ ▗▄▖ ▗▄▄▄ ▗▄▄▄▖     ▗▄▖  ▗▄▄▖     ▗▄▖      ▗▄▄▖ ▗▄▖ ▗▖ ▗▖▗▄▄▖  ▗▄▄▖▗▄▄▄▖
 ▐▌   ▐▌ ▐▌▐▌  █▐▌       ▐▌ ▐▌▐▌       ▐▌ ▐▌    ▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌ ▐▌▐▌   ▐▌
- ▐▌   ▐▌ ▐▌▐▌  █▐▛▀▀▘    ▐▛▀▜▌ ▝▀▚▖    ▐▛▀▜▌     ▝▀▚▖▐▌ ▐▌▐▌ ▐▌▐▛▀▚▖▐▌   ▐▛▀▀▘
- ▝▚▄▄▖▝▚▄▞▘▐▙▄▄▀▐▙▄▄▖    ▐▌ ▐▌▗▄▄▞▘    ▐▌ ▐▌    ▗▄▄▞▘▝▚▄▞▘▝▚▄▞▘▐▌ ▐▌▝▚▄▄▖▐▙▄▄▖
+▐▌   ▐▌ ▐▌▐▌  █▐▛▀▀▘    ▐▛▀▜▌ ▝▀▚▖    ▐▛▀▜▌     ▝▀▚▖▐▌ ▐▌▐▌ ▐▌▐▛▀▚▖▐▌   ▐▛▀▀▘
+ ▚▄▄▖▝▚▄▞▘▐▙▄▄▀▐▙▄▄▖    ▐▌ ▐▌▗▄▄▞▘    ▐▌ ▐▌    ▗▄▄▞▘▝▚▄▞▘▝▚▄▞▘▐▌ ▐▌▝▚▄▄▖▐▙▄▄▖
 ```
-
+{% endraw %}
 </div>
 
 My thesis, Code as a Source, investigates how software source code can serve as both a historical source and a form of digital heritage. It addresses questions of preservation, interpretation, and the epistemological status of code within historiography. Through case studies of significant programming projects, I explore how code reveals its cultural and political context—its embedded values, collaborative structures, and technical assumptions. Treating code as a textual and material artifact, my research reframes it as a site of historical meaning and challenges established boundaries of what historians consider archival evidence in the digital era.
