@@ -448,6 +448,11 @@ ninja.data = [{
           description: "A compact guide to writing prompts for generative AI models.",
           section: "Ressources",handler: () => {
               window.location.href = "/ressources/prompt-guidebook/";
+            },},{id: "ressources-notion-template-for-phd-planning",
+          title: 'Notion Template for PhD Planning',
+          description: "A customizable Notion planner designed to help PhD students track their research, deadlines, publications, and goals in one structured space.",
+          section: "Ressources",handler: () => {
+              window.location.href = "/ressources/phd-notion-template/";
             },},{
         id: 'social-email',
         title: 'email',
