@@ -4,7 +4,6 @@ description: A customizable Notion planner designed to help PhD students track t
 img: assets/img/phd-notion-template.png
 importance: 2
 category: TEMPLATES
-permalink: /ressources/phd-notion-template/
 ---
 
 This Notion template is built specifically for doctoral researchers and includes:
