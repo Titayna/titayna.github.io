@@ -162,6 +162,7 @@ collections:
     output: true
   ressources:
     output: true
+    permalink: /ressources/:path/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
