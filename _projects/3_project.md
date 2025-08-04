@@ -5,6 +5,7 @@ description: Teaching
 img:
 importance: 3
 category: CURRENT
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.
