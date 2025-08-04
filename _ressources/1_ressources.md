@@ -7,99 +7,377 @@ importance: 1
 category: GUIDEBOOK
 ---
 
-# How to Think Like an AI: Prompt Engineering Guidebook
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering Guidebook</title>
+    <style>
+        /* Light Mode (Default) */
+        :root {
+            --theme-color: #ff0d8e;
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+            --card-bg: #f8f9fa;
+            --border-color: #e0e0e0;
+            --highlight-bg: rgba(255, 13, 142, 0.1);
+            --highlight-border: rgba(255, 13, 142, 0.3);
+            --secondary-highlight: rgba(105, 255, 230, 0.1);
+            --secondary-border: rgba(105, 255, 230, 0.3);
+        }
 
-**Version 2.0 (March 2025)** | [Download PDF](/assets/pdf/demystifying_nlp_v2.pdf)
+        /* Dark Mode */
+        html[data-theme="dark"] {
+            --theme-color: #69ffe6;
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --text-light: #a0a0a0;
+            --card-bg: #2a2a2a;
+            --border-color: #404040;
+            --highlight-bg: rgba(105, 255, 230, 0.1);
+            --highlight-border: rgba(105, 255, 230, 0.3);
+            --secondary-highlight: rgba(255, 13, 142, 0.1);
+            --secondary-border: rgba(255, 13, 142, 0.3);
+        }
 
-This comprehensive guidebook provides practical strategies for effective communication with AI systems.
+        body {
+            font-family: "Google Sans Code", monospace;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-## Overview
+        .main-title {
+            color: var(--theme-color);
+            font-weight: 700;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
 
-This guide addresses the fundamental challenge facing researchers and practitioners working with generative AI.
+        .version-info {
+            color: var(--text-light);
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
 
-**Key insight**: Using generative AI involves Natural Language Processing (NLP), not human language.
+        .section-header {
+            color: var(--theme-color);
+            font-weight: 600;
+            font-size: 1.4em;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid var(--theme-color);
+            padding-bottom: 5px;
+        }
 
-## Guide Structure
+        .subsection-header {
+            color: var(--theme-color);
+            font-weight: 500;
+            font-size: 1.1em;
+            margin: 25px 0 10px 0;
+        }
 
-### 1. Foundations
+        .technique-header {
+            color: var(--text-color);
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+        }
 
-- **Definitions**: Understanding LLMs as mathematical models
-- **Limitations**: Critical analysis of training data dependencies
-- **Historical Context**: Evolution from ELIZA through modern transformers
+        .key-insight {
+            background: var(--highlight-bg);
+            border-left: 4px solid var(--theme-color);
+            padding: 15px;
+            margin: 20px 0;
+            font-weight: 500;
+        }
 
-### 2. Core Principles
+        .definition-list { margin: 15px 0; }
+        .definition-item { margin: 10px 0; padding: 8px 0; }
+        .definition-term { font-weight: 600; color: var(--theme-color); }
 
-- **Clarity**: Using straightforward, unambiguous language
-- **Context**: Providing situational information
-- **Precision**: Delimiting inputs with quotation marks, XML tags
-- **Examples**: Implementing few-shot prompting
+        .numbered-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-left: 0;
+        }
 
-### 3. Advanced Techniques
+        .numbered-steps li {
+            position: relative;
+            padding-left: 40px;
+            margin: 15px 0;
+            counter-increment: step-counter;
+        }
 
-#### ✳︎ Role Prompting
+        .numbered-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            background: var(--theme-color);
+            color: var(--bg-color);
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
 
-Strategic persona assignment to align model outputs with specific expertise.
+        .bullet-list { list-style: none; padding-left: 0; }
+        .bullet-list li { padding: 5px 0; position: relative; padding-left: 25px; }
+        .bullet-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--theme-color);
+            font-weight: 600;
+        }
 
-#### ✳︎ Multi-shot Prompting
+        .highlight-box {
+            background: var(--secondary-highlight);
+            border: 1px solid var(--secondary-border);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
 
-- **Zero-shot**: Task performance without prior examples
-- **One-shot**: Single example-guided performance
-- **Few-shot**: Multiple example-driven learning
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
 
-#### ✳︎ Reasoning Frameworks
+        .audience-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid var(--theme-color);
+            transition: background-color 0.3s ease;
+        }
 
-- **Chain-of-Thought (CoT)**: Linear, step-by-step problem decomposition
-- **Tree-of-Thought (ToT)**: Hierarchical exploration of multiple reasoning paths
-- **Graph-of-Thought (GoT)**: Network-based reasoning allowing cycles
+        .audience-title {
+            font-weight: 600;
+            color: var(--theme-color);
+            margin-bottom: 10px;
+        }
 
-### 4. Practical Applications
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
 
-The guide includes detailed examples for:
+        .spec-label {
+            font-weight: 600;
+            color: var(--theme-color);
+        }
 
-- Academic writing and peer review organization
-- Conference invitation personalization
-- Literary analysis with structured outputs
+        .symbol {
+            color: var(--theme-color);
+            font-weight: 600;
+            margin-right: 8px;
+        }
 
-## Key Contributions
+        .theme-link {
+            color: var(--theme-color);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
 
-### Methodological Framework
+        .theme-link:hover {
+            opacity: 0.8;
+        }
 
-This guide introduces a systematic approach based on four iterative steps:
+        .divider {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid var(--border-color);
+        }
 
-1. **Define the Goal**: Establishing specific, measurable criteria
-2. **Craft the Prompt**: Implementing clarity, context, precision
-3. **Generate & Evaluate**: Testing outputs against criteria
-4. **Refine**: Iterating based on performance assessment
+        .footer-text {
+            font-style: italic;
+            text-align: center;
+            color: var(--text-light);
+        }
+    </style>
 
-### Critical Perspective on AI Limitations
+</head>
+<body>
 
-Unlike many technical guides, this resource emphasizes critical understanding:
+<div class="main-title">How to Think Like an AI: Prompt Engineering Guidebook</div>
 
-- Training data bias propagation
-- Hallucination patterns in citation generation
-- Distinction between probability-based responses and factual accuracy
+<div class="version-info">
+    <span style="font-weight: 600;">Version 2.0 (March 2025)</span> | 
+    <a href="/assets/pdf/demystifying_nlp_v2.pdf" class="theme-link">Download PDF</a>
+</div>
 
-## Target Audience
+<p style="font-size: 1.1em; margin-bottom: 30px;">This guidebook provides practical strategies for effective communication with AI systems.</p>
 
-- **Researchers and Academics**: Seeking to integrate AI tools into scholarly workflows
-- **Digital Humanities Practitioners**: Working at technology-humanities intersection
-- **Graduate Students**: Developing computational literacy alongside disciplinary expertise
+<div class="section-header">Overview</div>
 
-## Pedagogical Approach
+<p>This guide addresses the challenges facing researchers and practitioners working with generative AI.</p>
 
-This guidebook treats AI interaction as **computational thinking** that requires:
+<div class="key-insight">
+    <span style="font-weight: 600;">Key insight</span>: Using generative AI involves Natural Language Processing (NLP), not human language.
+</div>
 
-- Understanding system capabilities and constraints
-- Systematic approach to problem decomposition
-- Iterative refinement based on empirical results
+<div class="section-header">Guide Structure</div>
 
-## Technical Specifications
+<div class="subsection-header">1. Foundations</div>
 
-- **Format**: PDF guidebook with visual examples and practical examples
-- **Version**: 2.0 (March 2025) - Updated with latest research
-- **Length**: Comprehensive coverage with practical examples
-- **Accessibility**: Designed for both technical and non-technical audiences
+<div class="definition-list">
+    <div class="definition-item">
+        <span class="definition-term">Definitions</span>: Understanding LLMs as mathematical models
+    </div>
+    <div class="definition-item">
+        <span class="definition-term">Limitations</span>: Critical analysis of training data dependencies
+    </div>
+    <div class="definition-item">
+        <span class="definition-term">Historical Context</span>: Evolution from ELIZA through modern transformers
+    </div>
+</div>
 
----
+<div class="subsection-header">2. Core Principles</div>
 
-_This resource represents part of ongoing research into the intersection of artificial intelligence and humanities scholarship._
+<div class="definition-list">
+    <div class="definition-item">
+        <span class="definition-term">Clarity</span>: Using straightforward, unambiguous language
+    </div>
+    <div class="definition-item">
+        <span class="definition-term">Context</span>: Providing situational information
+    </div>
+    <div class="definition-item">
+        <span class="definition-term">Precision</span>: Delimiting inputs with quotation marks, XML tags
+    </div>
+    <div class="definition-item">
+        <span class="definition-term">Examples</span>: Implementing few-shot prompting
+    </div>
+</div>
+
+<div class="subsection-header">3. Advanced Techniques</div>
+
+<div class="technique-header"><span class="symbol">✳︎</span>Role Prompting</div>
+<p style="margin-left: 20px;">Strategic persona assignment to align model outputs with specific expertise.</p>
+
+<div class="technique-header"><span class="symbol">✳︎</span>Multi-shot Prompting</div>
+<div style="margin-left: 20px;">
+    <div class="definition-list">
+        <div class="definition-item">
+            <span class="definition-term">Zero-shot</span>: Task performance without prior examples
+        </div>
+        <div class="definition-item">
+            <span class="definition-term">One-shot</span>: Single example-guided performance
+        </div>
+        <div class="definition-item">
+            <span class="definition-term">Few-shot</span>: Multiple example-driven learning
+        </div>
+    </div>
+</div>
+
+<div class="technique-header"><span class="symbol">✳︎</span>Reasoning Frameworks</div>
+<div style="margin-left: 20px;">
+    <div class="definition-list">
+        <div class="definition-item">
+            <span class="definition-term">Chain-of-Thought (CoT)</span>: Linear, step-by-step problem decomposition
+        </div>
+        <div class="definition-item">
+            <span class="definition-term">Tree-of-Thought (ToT)</span>: Hierarchical exploration of multiple reasoning paths
+        </div>
+        <div class="definition-item">
+            <span class="definition-term">Graph-of-Thought (GoT)</span>: Network-based reasoning allowing cycles
+        </div>
+    </div>
+</div>
+
+<div class="subsection-header">4. Practical Applications</div>
+
+<p>The guide includes detailed examples for:</p>
+
+<ul class="bullet-list">
+    <li>Academic writing and peer review organization</li>
+    <li>Conference invitation personalization</li>
+    <li>Literary analysis with structured outputs</li>
+</ul>
+
+<div class="section-header">Key Contributions</div>
+
+<div class="subsection-header">Methodological Framework</div>
+
+<p>This guide introduces a systematic approach based on four iterative steps:</p>
+
+<ol class="numbered-steps">
+    <li><span style="font-weight: 600;">Define the Goal</span>: Establishing specific, measurable criteria</li>
+    <li><span style="font-weight: 600;">Craft the Prompt</span>: Implementing clarity, context, precision</li>
+    <li><span style="font-weight: 600;">Generate &amp; Evaluate</span>: Testing outputs against criteria</li>
+    <li><span style="font-weight: 600;">Refine</span>: Iterating based on performance assessment</li>
+</ol>
+
+<div class="subsection-header">Critical Perspective on AI Limitations</div>
+
+<p>This resource emphasizes critical understanding:</p>
+
+<ul class="bullet-list">
+    <li>Training data bias propagation</li>
+    <li>Hallucination patterns</li>
+    <li>Distinction between probability-based responses and factual accuracy</li>
+</ul>
+
+<div class="section-header">Target Audience</div>
+
+<div class="audience-grid">
+    <div class="audience-card">
+        <div class="audience-title">Researchers and Academics</div>
+        <p>Seeking to integrate AI tools into scholarly workflows</p>
+    </div>
+    <div class="audience-card">
+        <div class="audience-title">Digital Humanities Practitioners</div>
+        <p>Working at technology-humanities intersection</p>
+    </div>
+    <div class="audience-card">
+        <div class="audience-title">Graduate Students</div>
+        <p>Developing computational literacy alongside disciplinary expertise</p>
+    </div>
+</div>
+
+<div class="section-header">Pedagogical Approach</div>
+
+<div class="highlight-box">
+    <p>This guidebook treats AI interaction as <span style="font-weight: 600;">computational thinking</span> that requires:</p>
+    <ul class="bullet-list">
+        <li>Understanding system capabilities and constraints</li>
+        <li>Systematic approach to problem decomposition</li>
+        <li>Iterative refinement based on empirical results</li>
+    </ul>
+</div>
+
+<div class="section-header">Technical Specifications</div>
+
+<div class="spec-grid">
+    <div class="spec-label">Format:</div>
+    <div>PDF guidebook with visual examples and practical examples</div>
+    
+    <div class="spec-label">Version:</div>
+    <div>2.0 (March 2025) - Updated with latest research</div>
+    
+    <div class="spec-label">Length:</div>
+    <div>Comprehensive coverage with practical examples</div>
+    
+    <div class="spec-label">Accessibility:</div>
+    <div>Designed for both technical and non-technical audiences</div>
+</div>
+
+<hr class="divider">
+
+<p class="footer-text">
+    This resource represents part of ongoing research into the intersection of artificial intelligence and humanities scholarship.
+</p>
+
+</body>
+</html>
