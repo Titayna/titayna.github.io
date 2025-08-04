@@ -5,7 +5,7 @@ permalink: /ressources/
 description:
 nav: true
 nav_order: 3
-display_categories: [TEMPLATES, GUIDEBOOK]
+display_categories: [GUIDEBOOK, TEMPLATES]
 horizontal: false
 ---
 
