@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["custom.scss"],"names":[],"mappings":"AAEA,sFAoBE","sourcesContent":["/* No front matter or imports needed */\n\nbody,\np,\ndiv,\nli,\nspan,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\na,\nblockquote,\ncode,\npre,\nul,\nol,\ntable,\n.navbar,\nfooter {\n font-family: \"Courier New\", monospace !important;\n}\n"],"file":"custom.css"}
