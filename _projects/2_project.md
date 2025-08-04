@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Love Letter Generator (1953)
-description: Case study
+description: Case study 2
 img: assets/img/cover_strachey.png
 importance: 2
 category: CURRENT
-giscus_comments: true
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.
