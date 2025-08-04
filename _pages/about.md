@@ -2,7 +2,7 @@
 layout: about
 title: ABOUT
 permalink: /
-subtitle: Doctoral researcher, PhD Candidate, <a href="https://www.uni.lu/c2dh-en/" target="_blank">C<sup>2</sup>DH</a>.
+subtitle: Doctoral researcher, <a href="https://www.uni.lu/c2dh-en/" target="_blank">C<sup>2</sup>DH</a>.
 
 #profile:
 #  align: right
@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m currently a <span style="font-weight: 700;">PhD candidate</span> at the <span style="text-decoration: underline;">[Luxembourg Centre for Contemporary and Digital History (C²DH)](https://www.c2dh.uni.lu/)</span>, supervised by [Professor Valérie Schafer](https://www.c2dh.uni.lu/people/valerie-schafer). The C²DH is an interdisciplinary centre focused on rethinking contemporary history through digital and critical methods. I’m part of the [Deep Data Science of Digital History (D4H)](https://d4h.uni.lu/) Doctoral Training Unit, a PRIDE-funded program that brings together history, data science, and computer science to train researchers in digital analysis and interpretation.
+I’m currently a <span style="font-weight: 700;">PhD candidate</span> at the <span style="text-decoration: underline;">[Luxembourg Centre for Contemporary and Digital History (C²DH)](https://www.c2dh.uni.lu/)</span>, supervised by <span style="text-decoration: underline;">[Professor Valérie Schafer](https://www.c2dh.uni.lu/people/valerie-schafer)</span>. The C²DH is an interdisciplinary centre focused on rethinking contemporary history through digital and critical methods. I’m part of the <span style="text-decoration: underline;">[Deep Data Science of Digital History (D4H)](https://d4h.uni.lu/)</span> Doctoral Training Unit, a PRIDE-funded program that brings together history, data science, and computer science to train researchers in digital analysis and interpretation.
 
 My academic background spans <span style="font-weight: 700;">history, political science, and digital humanities</span>. I hold two Master’s degrees from the <span style="font-weight: 700;">University of Lausanne</span>, and have worked on research and archival projects at institutions including <span style="font-weight: 700;">EPFL, the University of Zurich, and the Swiss Elite Observatory</span>. These experiences have shaped my interest in understanding software, code, and other digital artifacts as both technical objects and historical sources.
 
