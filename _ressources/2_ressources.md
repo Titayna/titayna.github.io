@@ -233,7 +233,7 @@ category: TEMPLATES
 <body>
 
 <div class="hero-image">
-    <img src="/assets/img/guidebook.jpg" alt="Zephyr Planner for PhD Template Preview">
+    <img src="/assets/img/template.jpg" alt="Zephyr Planner for PhD Template Preview">
 </div>
 
 <div class="subtitle">
