@@ -52,6 +52,22 @@ category: TEMPLATES
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
+        .hero-image {
+            text-align: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        html[data-theme="dark"] .hero-image img {
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
         .main-title {
             color: var(--theme-color);
             font-weight: 700;
@@ -215,6 +231,10 @@ category: TEMPLATES
 
 </head>
 <body>
+
+<div class="hero-image">
+    <img src="/assets/img/guidebook.jpg" alt="Zephyr Planner for PhD Template Preview">
+</div>
 
 <div class="subtitle">
     ACCESS HERE: | 
