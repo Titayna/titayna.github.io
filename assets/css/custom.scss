@@ -3,102 +3,26 @@
 
 @import "{{ site.theme }}";
 
-/* ===== GOOGLE FONTS ===== */
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Press+Start+2P&family=Source+Sans+Pro:wght@300;400;600&display=swap");
-
-/* ===== CUSTOM TYPOGRAPHY ===== */
-
-/* Body text - affects ALL paragraph text */
+/* ===== Test: Apply Courier New to entire site ===== */
 body,
 p,
 div,
 li,
-span {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-/* Headings - affects ALL headings site-wide */
-h1 {
-  font-family: "Cutive Mono", "Courier New", monospace;
-  font-size: 2.5rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--global-divider-color);
-  padding-bottom: 0.5rem;
-}
-
-h3 {
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  color: var(--global-theme-color);
-}
-
-h4 {
-  font-family: "Press Start 2P", monospace;
-  font-size: 0.9rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 1.5rem;
-}
-
-/* Links */
-a {
-  font-family: inherit;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-/* Code blocks */
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+blockquote,
 code,
-pre {
-  font-family: "Cutive Mono", "Courier New", monospace;
-  font-size: 0.95rem;
-}
-
-/* Blockquotes */
-blockquote {
-  font-family: "Source Sans Pro", serif;
-  font-style: italic;
-  font-size: 1.2rem;
-  line-height: 1.8;
-}
-
-/* Lists */
+pre,
 ul,
-ol {
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
-  line-height: 1.7;
-}
-
-/* Tables */
-table {
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
-  font-size: 0.95rem;
-}
-
-/* Navigation */
-.navbar {
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
-  font-weight: 500;
-}
-
-/* Footer */
+ol,
+table,
+.navbar,
 footer {
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
-  font-size: 0.9rem;
+  font-family: "Courier New", monospace !important;
 }
