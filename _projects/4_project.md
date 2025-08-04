@@ -5,6 +5,7 @@ description: Heritagisation of code
 img:
 importance: 4
 category: CURRENT
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.
