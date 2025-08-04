@@ -216,10 +216,8 @@ category: TEMPLATES
 </head>
 <body>
 
-<div class="main-title">Zephyr Planner for PhD</div>
-
 <div class="subtitle">
-    Notion Template for Doctoral Research Management | 
+    ACCESS HERE: | 
     <a href="https://titaynakw.notion.site/Zephyr-Planner-for-PhD-Dark-mode-345601cd8dfd44219294e4395e7ee7b6" class="theme-link">Dark Mode Template</a> | 
     <a href="https://zephyrplanning.notion.site/?pvs=74" class="theme-link">Light Mode Template</a>
 </div>
