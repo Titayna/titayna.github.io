@@ -5,25 +5,6 @@ description: A compact guide to writing prompts for generative AI models.
 img:
 importance: 1
 category: GUIDEBOOK
-_styles: >
-  .page-content h1 { 
-    font-family: 'Arial', 'Times New Roman', serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .page-content h2 { 
-    font-family: 'Arial', 'Arial', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .page-content h3 { 
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 200;
-    color: #495057;
-  }
 ---
 
 # How to Think Like an AI: Prompt Engineering Guidebook
