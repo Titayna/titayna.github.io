@@ -430,7 +430,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-love-letter-generator-1953",
           title: 'Love Letter Generator (1953)',
-          description: "Case study",
+          description: "Case study 2",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-ranke-2",
