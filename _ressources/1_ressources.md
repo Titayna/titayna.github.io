@@ -5,6 +5,25 @@ description: A compact guide to writing prompts for generative AI models.
 img:
 importance: 1
 category: GUIDEBOOK
+_styles: >
+  .page-content h1 { 
+    font-family: 'Arial', 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .page-content h2 { 
+    font-family: 'Arial', 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .page-content h3 { 
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #495057;
+  }
 ---
 
 # How to Think Like an AI: Prompt Engineering Guidebook
@@ -36,17 +55,17 @@ This guide addresses the fundamental challenge facing researchers and practition
 
 ### 3. Advanced Techniques
 
-#### Role Prompting
+#### ✳︎ Role Prompting
 
 Strategic persona assignment to align model outputs with specific expertise.
 
-#### Multi-shot Prompting
+#### ✳︎ Multi-shot Prompting
 
 - **Zero-shot**: Task performance without prior examples
 - **One-shot**: Single example-guided performance
 - **Few-shot**: Multiple example-driven learning
 
-#### Reasoning Frameworks
+#### ✳︎ Reasoning Frameworks
 
 - **Chain-of-Thought (CoT)**: Linear, step-by-step problem decomposition
 - **Tree-of-Thought (ToT)**: Hierarchical exploration of multiple reasoning paths
