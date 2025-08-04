@@ -427,7 +427,7 @@ ninja.data = [{
           title: 'Apple Lisa (1983)',
           description: "Case study",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/apple-lisa/";
             },},{id: "projects-love-letter-generator-1953",
           title: 'Love Letter Generator (1953)',
           description: "Case study 2",
