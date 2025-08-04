@@ -46,14 +46,42 @@ html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.f
   font-family: "Russo One", sans-serif !important;
 }
 
-/* Bold spans use theme color in both light and dark mode */
+/* Bold spans - custom colors for light and dark mode */
 span[style*="font-weight: 700"] {
-  color: var(--global-theme-color) !important;
+  color: #8497ff !important; /* Light mode color */
   font-weight: 700 !important;
 }
 
-/* Alternative selector in case the above doesn't work */
 span[style="font-weight: 700;"] {
-  color: var(--global-theme-color) !important;
+  color: #8497ff !important; /* Light mode color */
   font-weight: 700 !important;
+}
+
+/* Dark mode override for bold spans */
+html[data-theme="dark"] span[style*="font-weight: 700"],
+html[data-theme="dark"] span[style="font-weight: 700;"] {
+  color: #c2abff !important; /* Dark mode color */
+}
+
+/* Underlined spans - custom colors for light and dark mode */
+span[style*="text-decoration: underline"] {
+  color: #8497ff !important; /* Light mode color */
+  text-decoration: underline !important;
+}
+
+span[style="text-decoration: underline;"] {
+  color: #8497ff !important; /* Light mode color */
+  text-decoration: underline !important;
+}
+
+span[style*="text-decoration: underline overline"] {
+  color: #8497ff !important; /* Light mode color */
+  text-decoration: underline overline !important;
+}
+
+/* Dark mode override for underlined spans */
+html[data-theme="dark"] span[style*="text-decoration: underline"],
+html[data-theme="dark"] span[style="text-decoration: underline;"],
+html[data-theme="dark"] span[style*="text-decoration: underline overline"] {
+  color: #c2abff !important; /* Dark mode color */
 }
