@@ -4,7 +4,7 @@
 <span style="font-weight: 400;">Regular text</span>
 <span style="font-weight: 500;">Medium text</span>
 <span style="font-weight: 600;">Semi-bold text</span>
-<span style="font-weight: 700;">Bold text</span>
+<span style="font-weight: 700;">Bold text</span> <!-- The one with the color change setting -->
 <span style="font-weight: 800;">Extra-bold text</span>
 
 <!-- Font styles -->
