@@ -52,6 +52,22 @@ category: GUIDEBOOK
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
+        .hero-image {
+            text-align: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        html[data-theme="dark"] .hero-image img {
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
         .main-title {
             color: var(--theme-color);
             font-weight: 700;
@@ -206,16 +222,28 @@ category: GUIDEBOOK
             text-align: center;
             color: var(--text-light);
         }
+        .hero-image a img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .hero-image a:hover img {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
     </style>
 
 </head>
 <body>
 
-<div class="main-title">How to Think Like an AI: Prompt Engineering Guidebook</div>
-
 <div class="version-info">
     <span style="font-weight: 600;">Version 2.0 (March 2025)</span> | 
     <a href="/assets/pdf/demystifying_nlp_v2.pdf" class="theme-link">Download PDF</a>
+</div>
+
+<div class="hero-image">
+    <a href="/assets/pdf/demystifying_nlp_v2.pdf" class="theme-link">
+        <img src="/assets/img/guidebook.jpg" alt="Prompt Engineering Guidebook Preview">
+    </a>
 </div>
 
 <p style="font-size: 1.1em; margin-bottom: 30px;">This guidebook provides practical strategies for effective communication with AI systems.</p>
