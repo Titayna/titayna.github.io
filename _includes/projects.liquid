@@ -1,13 +1,5 @@
 <div class="col">
-  <a
-    href="
-      {% if project.redirect or ressource.redirect %}
-        {{ project.redirect | default: ressource.redirect }}
-      {% else %}
-        {{ project.url | default: ressource.url | relative_url }}
-      {% endif %}
-    "
-  >
+  <a href="{% if project.redirect or ressource.redirect %}{{ project.redirect | default: ressource.redirect }}{% else %}{{ project.url | default: ressource.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
       {% assign item = project | default: ressource %}
       {% if item.img %}
