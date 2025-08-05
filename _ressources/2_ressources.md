@@ -2,7 +2,7 @@
 layout: page
 title: Notion Template for PhD Planning
 description: A customizable Notion planner designed to help PhD students track their research, deadlines, publications, and goals in one structured space.
-img: /assets/img/template.jpg
+img: /assets/img/template_split.png
 importance: 2
 category: TEMPLATES
 ---
@@ -44,10 +44,28 @@ category: TEMPLATES
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s ease;
         }
 
         html[data-theme="dark"] .hero-image img {
             box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Theme-based image switching */
+        .hero-image .light-image {
+            display: block;
+        }
+
+        .hero-image .dark-image {
+            display: none;
+        }
+
+        html[data-theme="dark"] .hero-image .light-image {
+            display: none;
+        }
+
+        html[data-theme="dark"] .hero-image .dark-image {
+            display: block;
         }
 
         .main-title {
@@ -224,7 +242,8 @@ category: TEMPLATES
 <body>
 
 <div class="hero-image">
-    <img src="/assets/img/template.jpg" alt="Zephyr Planner for PhD Template Preview">
+    <img src="/assets/img/template_light.png" alt="Zephyr Planner for PhD Template Preview - Light Mode" class="light-image">
+    <img src="/assets/img/template_dark.png" alt="Zephyr Planner for PhD Template Preview - Dark Mode" class="dark-image">
 </div>
 
 <div class="subtitle">
