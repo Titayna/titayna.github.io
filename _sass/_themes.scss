@@ -1,161 +1,197 @@
 /*******************************************************************************
- * Themes
- ******************************************************************************/
+* Themes
+******************************************************************************/
 
-@use "sass:color";
+@use "sass:color"; // Import Sass color functions for manipulating colors
 
 :root {
-  color-scheme: light;
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #00f3ff; /* Change here for light */
-  --global-hover-color: #00f3ff; /* Change here for light */
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
+  // Default theme variables (Light Mode)
+  color-scheme: light; // Tells browser this is light mode for system UI elements
+  --global-bg-color: #dfdfdf; /* Main background color for light mode - custom light gray */
+  --global-code-bg-color: #{$code-bg-color-light}; // Background color for code blocks in light mode
+  --global-text-color: #{$black-color}; // Primary text color in light mode
+  --global-text-color-light: #{$grey-color}; // Secondary/muted text color in light mode
+  --global-theme-color: #00f3ff; /* Main accent color for light mode - cyan */
+  --global-hover-color: #00f3ff; /* Color for hover states in light mode - cyan */
+  --global-hover-text-color: #{$white-color}; // Text color when hovering over accent elements
+  --global-footer-bg-color: #dfdfdf; /* Footer background color - matches main background */
+  --global-footer-text-color: #{$black-color}; /* Footer text color - black for contrast */
+  --global-footer-link-color: #{$white-color}; /* Footer link color - white (may need adjustment) */
+  --global-distill-app-color: #{$grey-color}; // Color for Distill.pub article elements
+  --global-divider-color: rgba(0, 0, 0, 0.1); // Color for horizontal dividers/separators
+  --global-card-bg-color: #{$white-color}; // Background color for card elements
+  --global-highlight-color: #{$red-color-dark}; // Color for highlighted text/elements
   --global-back-to-top-bg-color: rgba(
+    // Background color for back-to-top button
     #{color.channel($black-color, "red", $space: rgb)},
+    // Red channel of black color
     #{color.channel($black-color, "green", $space: rgb)},
+    // Green channel of black color
     #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
+    // Blue channel of black color
+    0.4 // 40% opacity
   );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
+  --global-back-to-top-text-color: #{$white-color}; // Text color for back-to-top button
+  --global-newsletter-bg-color: #{$white-color}; // Background color for newsletter signup
+  --global-newsletter-text-color: #{$black-color}; // Text color for newsletter signup
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  // Color scheme for tip/info blocks
+  --global-tip-block: #42b983; // Border color for tip blocks
+  --global-tip-block-bg: #e2f5ec; // Background color for tip blocks
+  --global-tip-block-text: #215d42; // Text color for tip blocks
+  --global-tip-block-title: #359469; // Title color for tip blocks
 
+  // Color scheme for warning blocks
+  --global-warning-block: #e7c000; // Border color for warning blocks
+  --global-warning-block-bg: #fff8d8; // Background color for warning blocks
+  --global-warning-block-text: #6b5900; // Text color for warning blocks
+  --global-warning-block-title: #b29400; // Title color for warning blocks
+
+  // Color scheme for danger/error blocks
+  --global-danger-block: #c00; // Border color for danger blocks
+  --global-danger-block-bg: #ffe0e0; // Background color for danger blocks
+  --global-danger-block-text: #600; // Text color for danger blocks
+  --global-danger-block-title: #c00; // Title color for danger blocks
+
+  // Theme toggle button visibility in light mode
   #light-toggle-system {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
+    // System theme toggle button
+    padding-left: 10px; // Left padding
+    padding-top: 12px; // Top padding
+    display: block; // Show by default in light mode
   }
 
   #light-toggle-dark {
-    display: none;
+    // Dark mode toggle button
+    display: none; // Hide in light mode
   }
 
   #light-toggle-light {
-    display: none;
+    // Light mode toggle button
+    display: none; // Hide in light mode (since we're already in light mode)
   }
 
+  // Content visibility based on theme
   .only-light {
-    display: block;
+    // Elements that should only show in light mode
+    display: block; // Show in light mode
   }
 
   .only-dark {
-    display: none;
+    // Elements that should only show in dark mode
+    display: none; // Hide in light mode
   }
 
+  // Back to top button styling
   #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-    bottom: $back-to-top-bottom;
-    right: $back-to-top-right;
-    height: $back-to-top-height;
-    width: $back-to-top-width;
-    z-index: $back-to-top-z-index;
+    color: var(--global-back-to-top-text-color); // Use defined text color
+    background: var(--global-back-to-top-bg-color); // Use defined background color
+    bottom: $back-to-top-bottom; // Position from bottom (Sass variable)
+    right: $back-to-top-right; // Position from right (Sass variable)
+    height: $back-to-top-height; // Button height (Sass variable)
+    width: $back-to-top-width; // Button width (Sass variable)
+    z-index: $back-to-top-z-index; // Stacking order (Sass variable)
   }
 }
 
 html[data-theme="dark"] {
-  color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #69ffe6; /* change here for dark */
-  --global-hover-color: #69ffe6; /* change here for dark */
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  // Dark mode theme variables
+  color-scheme: dark; // Tells browser this is dark mode for system UI elements
+  --global-bg-color: #3e3e3e; /* Main background color for dark mode - custom dark gray */
+  --global-code-bg-color: #{$code-bg-color-dark}; // Background color for code blocks in dark mode
+  --global-text-color: #{$grey-color-light}; // Primary text color in dark mode
+  --global-text-color-light: #{$grey-color}; // Secondary/muted text color in dark mode
+  --global-theme-color: #69ffe6; /* Main accent color for dark mode - light cyan */
+  --global-hover-color: #69ffe6; /* Color for hover states in dark mode - light cyan */
+  --global-hover-text-color: #{$white-color}; // Text color when hovering over accent elements
+  --global-footer-bg-color: #3e3e3e; /* Footer background color - matches main background */
+  --global-footer-text-color: #{$grey-color-dark}; // Footer text color (should be white for contrast)
+  --global-footer-link-color: #{$black-color}; // Footer link color
+  --global-distill-app-color: #{$grey-color-light}; // Color for Distill.pub article elements
+  --global-divider-color: #424246; // Color for horizontal dividers/separators in dark mode
+  --global-card-bg-color: #{$grey-900}; // Background color for card elements in dark mode
   --global-back-to-top-bg-color: rgba(
+    // Background color for back-to-top button
     #{color.channel($white-color, "red", $space: rgb)},
+    // Red channel of white color
     #{color.channel($white-color, "green", $space: rgb)},
+    // Green channel of white color
     #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
+    // Blue channel of white color
+    0.5 // 50% opacity
   );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
+  --global-back-to-top-text-color: #{$black-color}; // Text color for back-to-top button
+  --global-newsletter-bg-color: #{$grey-color-light}; // Background color for newsletter signup
+  --global-newsletter-text-color: #{$grey-color-dark}; // Text color for newsletter signup
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  // Note: Block colors remain the same in dark mode (could be adjusted for better dark mode UX)
+  --global-tip-block: #42b983; // Border color for tip blocks
+  --global-tip-block-bg: #e2f5ec; // Background color for tip blocks
+  --global-tip-block-text: #215d42; // Text color for tip blocks
+  --global-tip-block-title: #359469; // Title color for tip blocks
+  --global-warning-block: #e7c000; // Border color for warning blocks
+  --global-warning-block-bg: #fff8d8; // Background color for warning blocks
+  --global-warning-block-text: #6b5900; // Text color for warning blocks
+  --global-warning-block-title: #b29400; // Title color for warning blocks
+  --global-danger-block: #c00; // Border color for danger blocks
+  --global-danger-block-bg: #ffe0e0; // Background color for danger blocks
+  --global-danger-block-text: #600; // Text color for danger blocks
+  --global-danger-block-title: #c00; // Title color for danger blocks
 
+  // Content visibility in dark mode
   .only-light {
-    display: none;
+    // Elements that should only show in light mode
+    display: none; // Hide in dark mode
   }
 
   .only-dark {
-    display: block;
+    // Elements that should only show in dark mode
+    display: block; // Show in dark mode
   }
 }
 
 html[data-theme-setting="dark"] {
+  // When user explicitly selects dark mode
   #light-toggle-system {
-    display: none;
+    // System theme toggle button
+    display: none; // Hide system toggle when user chose dark
   }
 
   #light-toggle-dark {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
+    // Dark mode toggle button
+    padding-left: 10px; // Left padding
+    padding-top: 12px; // Top padding
+    display: block; // Show dark mode toggle when in dark mode
   }
 
   #light-toggle-light {
-    display: none;
+    // Light mode toggle button
+    display: none; // Hide light mode toggle when in dark mode
   }
 
   #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
+    // Back to top button styling override
+    color: var(--global-back-to-top-text-color); // Use defined text color
+    background: var(--global-back-to-top-bg-color); // Use defined background color
   }
 }
 
 html[data-theme-setting="light"] {
+  // When user explicitly selects light mode
   #light-toggle-system {
-    display: none;
+    // System theme toggle button
+    display: none; // Hide system toggle when user chose light
   }
 
   #light-toggle-dark {
-    display: none;
+    // Dark mode toggle button
+    display: none; // Hide dark mode toggle when in light mode
   }
 
   #light-toggle-light {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
+    // Light mode toggle button
+    padding-left: 10px; // Left padding
+    padding-top: 12px; // Top padding
+    display: block; // Show light mode toggle when in light mode
   }
 }
