@@ -7,7 +7,7 @@
 :root {
   // Default theme variables (Light Mode)
   color-scheme: light; // Tells browser this is light mode for system UI elements
-  --global-bg-color: #dfdfdf; /* Main background color for light mode - custom light gray */
+  --global-bg-color: #ccc; /* Main background color for light mode - custom light gray */
   --global-code-bg-color: #{$code-bg-color-light}; // Background color for code blocks in light mode
   --global-text-color: #{$black-color}; // Primary text color in light mode
   --global-text-color-light: #{$grey-color}; // Secondary/muted text color in light mode
