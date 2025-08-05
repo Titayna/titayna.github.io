@@ -1,87 +1,104 @@
 ---
 ---
 
+// Import Google Fonts for the custom typography system
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Russo+One&display=swap");
 
 /* No front matter or imports needed */
 
-body,
-p,
-div,
-li,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-blockquote,
-code,
-pre,
-ul,
-ol,
-table,
-.navbar,
+// Set Google Sans Code as the default monospace font for all basic HTML elements
+body, // Main document body
+p, // Paragraphs
+div, // Generic containers
+li, // List items
+span, // Inline text containers
+h1, // Main headings
+h2, // Secondary headings
+h3, // Tertiary headings
+h4, // Fourth-level headings
+h5, // Fifth-level headings
+h6, // Sixth-level headings
+a, // Links
+blockquote, // Quote blocks
+code, // Inline code
+pre, // Preformatted text blocks
+ul, // Unordered lists
+ol, // Ordered lists
+table, // Tables
+.navbar, // Navigation bar
 footer {
-  font-family: "Google Sans Code", monospace !important;
+  // Page footer
+  font-family: "Google Sans Code", monospace !important; // Apply Google Sans Code to all elements with high priority
 }
 
-/* Specific font for page content - ready to customize */
-.page-content,
-.post-content,
-main,
-article,
+/* Specific font targeting for main content areas - ready to customize */
+.page-content, // Jekyll page content wrapper
+.post-content, // Jekyll post content wrapper
+main, // HTML5 main content element
+article, // HTML5 article element
 html body.fixed-top-nav .container .row .col {
-  font-family: "Google Sans Code", monospace !important; /* Change this to your desired font */
+  // Bootstrap column within fixed navigation layout
+  font-family: "Google Sans Code", monospace !important; /* Apply Google Sans Code to content areas - can be changed to any desired font */
 }
 
+// Special typography for post titles (specifically for "About > Titaÿna Kauffmann" page)
 html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
   // About > Titaÿna Kauffmann
-  font-family: "Russo One", sans-serif !important;
+  font-family: "Russo One", sans-serif !important; // Use Russo One for distinctive post title styling
 }
 
+// Special typography for navbar brand/site title
 html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
-  font-family: "Russo One", sans-serif !important;
+  font-family: "Russo One", sans-serif !important; // Use Russo One for site branding in navigation
 }
 
 /* Bold spans - custom colors for light and dark mode */
+// Target spans with inline font-weight: 700 styling (partial match)
 span[style*="font-weight: 700"] {
-  color: #8497ff !important; /* Light mode color */
-  font-weight: 700 !important;
+  color: #8497ff !important; /* Light mode color - blue */
+  font-weight: 700 !important; // Ensure bold weight is applied
 }
 
+// Target spans with exact font-weight: 700; styling (exact match)
 span[style="font-weight: 700;"] {
-  color: #8497ff !important; /* Light mode color */
-  font-weight: 700 !important;
+  color: #8497ff !important; /* Light mode color - blue */
+  font-weight: 700 !important; // Ensure bold weight is applied
 }
 
-/* Dark mode override for bold spans */
-html[data-theme="dark"] span[style*="font-weight: 700"],
-html[data-theme="dark"] span[style="font-weight: 700;"] {
-  color: #c2abff !important; /* Dark mode color */
+/* Optimized styling for bold and underlined spans using CSS variables */
+
+// Define color variables for light and dark modes
+:root {
+  --custom-span-color: #ca6bff; /* Light mode color - blue */
 }
 
-/* Underlined spans - custom colors for light and dark mode */
+html[data-theme="dark"] {
+  --custom-span-color: #c2abff; /* Dark mode color - purple */
+}
+
+/* Bold spans - uses CSS variable that automatically adapts to theme */
+span[style*="font-weight: 700"], // Partial match for font-weight
+span[style="font-weight: 700;"] {
+  // Exact match for font-weight
+  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
+  font-weight: 700 !important; // Ensure bold weight is applied
+}
+
+/* Underlined spans - uses same CSS variable for consistent theming */
 span[style*="text-decoration: underline"] {
-  color: #8497ff !important; /* Light mode color */
-  text-decoration: underline !important;
+  // Partial match for any underline
+  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
+  text-decoration: underline !important; // Ensure underline is applied
 }
 
 span[style="text-decoration: underline;"] {
-  color: #8497ff !important; /* Light mode color */
-  text-decoration: underline !important;
+  // Exact match for simple underline
+  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
+  text-decoration: underline !important; // Ensure underline is applied
 }
 
 span[style*="text-decoration: underline overline"] {
-  color: #8497ff !important; /* Light mode color */
-  text-decoration: underline overline !important;
-}
-
-/* Dark mode override for underlined spans */
-html[data-theme="dark"] span[style*="text-decoration: underline"],
-html[data-theme="dark"] span[style="text-decoration: underline;"],
-html[data-theme="dark"] span[style*="text-decoration: underline overline"] {
-  color: #c2abff !important; /* Dark mode color */
+  // Match for double decoration
+  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
+  text-decoration: underline overline !important; // Ensure both decorations are applied
 }
