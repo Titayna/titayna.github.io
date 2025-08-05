@@ -15,12 +15,12 @@ category: GUIDEBOOK
     <style>
         /* Light Mode (Default) */
         :root {
-            --theme-color: #ff0d8e;
+            --theme-color: #ffdaee;
         }
 
         /* Dark Mode */
         html[data-theme="dark"] {
-            --theme-color: #69ffe6;
+            --theme-color: #ffafda;
         }
 
         body {
