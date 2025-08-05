@@ -135,7 +135,7 @@ span[style*="text-decoration: underline overline"] {
 
 // Light mode (default)
 html body.fixed-top-nav div.card-body h2.card-title {
-  color: #b1ffe1;
+  color: #c0b7ff;
   transition: color 0.2s ease-in-out;
 }
 
@@ -145,7 +145,7 @@ html body.fixed-top-nav div.card:hover h2.card-title {
 
 // Dark mode
 html[data-theme="dark"] body.fixed-top-nav div.card-body h2.card-title {
-  color: #97ffd7;
+  color: #9e88ff;
   transition: color 0.2s ease-in-out;
 }
 
