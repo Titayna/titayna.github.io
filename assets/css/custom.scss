@@ -52,19 +52,6 @@ html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.f
   font-family: "Russo One", sans-serif !important; // Use Russo One for site branding in navigation
 }
 
-/* Bold spans - custom colors for light and dark mode */
-// Target spans with inline font-weight: 700 styling (partial match)
-span[style*="font-weight: 700"] {
-  color: #8497ff !important; /* Light mode color - blue */
-  font-weight: 700 !important; // Ensure bold weight is applied
-}
-
-// Target spans with exact font-weight: 700; styling (exact match)
-span[style="font-weight: 700;"] {
-  color: #8497ff !important; /* Light mode color - blue */
-  font-weight: 700 !important; // Ensure bold weight is applied
-}
-
 /* Optimized styling for bold and underlined spans using CSS variables */
 
 // Define color variables for light and dark modes

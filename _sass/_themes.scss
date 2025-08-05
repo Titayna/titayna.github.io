@@ -12,7 +12,7 @@
   --global-text-color: #{$black-color}; // Primary text color in light mode
   --global-text-color-light: #{$grey-color}; // Secondary/muted text color in light mode
   --global-theme-color: #4a80ff; /* Main accent color for light mode - cyan */
-  --global-hover-color: #4a80ff; /* Color for hover states in light mode - cyan */
+  --global-hover-color: #7fa5ff; /* Color for hover states in light mode - cyan */
   --global-hover-text-color: #{$white-color}; // Text color when hovering over accent elements
   --global-footer-bg-color: #dfdfdf; /* Footer background color - matches main background */
   --global-footer-text-color: #{$black-color}; /* Footer text color - black for contrast */
@@ -102,7 +102,7 @@ html[data-theme="dark"] {
   --global-text-color: #{$grey-color-light}; // Primary text color in dark mode
   --global-text-color-light: #{$grey-color}; // Secondary/muted text color in dark mode
   --global-theme-color: #69ffe6; /* Main accent color for dark mode - light cyan */
-  --global-hover-color: #69ffe6; /* Color for hover states in dark mode - light cyan */
+  --global-hover-color: #9fffef; /* Color for hover states in dark mode - light cyan */
   --global-hover-text-color: #{$white-color}; // Text color when hovering over accent elements
   --global-footer-bg-color: #3e3e3e; /* Footer background color - matches main background */
   --global-footer-text-color: #{$grey-color-dark}; // Footer text color (should be white for contrast)
