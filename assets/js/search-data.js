@@ -91,9 +91,9 @@ ninja.data = [{
           description: "Heritagisation of code",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-cahiers-polier",
-          title: 'Cahiers Polier',
-          description: "Handwritten Text Recognition",
+            },},{id: "projects-handwritten-text-recognition-and-the-notebooks-of-jean-henri-polier-de-vernand-1715-1791",
+          title: 'Handwritten Text Recognition and the Notebooks of Jean-Henri Polier de Vernand (1715-1791)',
+          description: "Master Thesis Project of Digital Transcription of 26,300 Pages Through HTR Technology (2023)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "ressources-prompt-engineering-guidebook",
