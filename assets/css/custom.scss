@@ -133,26 +133,24 @@ span[style*="text-decoration: underline overline"] {
 // 🎯 Default Card Title Color (Keeps theme hover effects via CSS variables)
 // -----------------------------------------------------------------------------
 
-@media (prefers-color-scheme: light) {
-  html body.fixed-top-nav div.card-body h2.card-title {
-    color: #fdea52;
-    transition: color 0.2s ease-in-out;
-  }
-
-  html body.fixed-top-nav div.card:hover h2.card-title {
-    color: var(--global-hover-color);
-  }
+// Light mode (default)
+html body.fixed-top-nav div.card-body h2.card-title {
+  color: #b1ffe1;
+  transition: color 0.2s ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  html body.fixed-top-nav div.card-body h2.card-title {
-    color: #fff391;
-    transition: color 0.2s ease-in-out;
-  }
+html body.fixed-top-nav div.card:hover h2.card-title {
+  color: var(--global-hover-color);
+}
 
-  html body.fixed-top-nav div.card:hover h2.card-title {
-    color: var(--global-hover-color);
-  }
+// Dark mode
+html[data-theme="dark"] body.fixed-top-nav div.card-body h2.card-title {
+  color: #97ffd7;
+  transition: color 0.2s ease-in-out;
+}
+
+html[data-theme="dark"] body.fixed-top-nav div.card:hover h2.card-title {
+  color: var(--global-hover-color);
 }
 
 // -----------------------------------------------------------------------------
