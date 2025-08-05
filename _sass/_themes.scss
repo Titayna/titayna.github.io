@@ -12,14 +12,14 @@
   --global-text-color: #{$black-color}; // Primary text color in light mode
   --global-text-color-light: #{$grey-color}; // Secondary/muted text color in light mode
   --global-theme-color: #79f9ff; /* Main accent color for light mode - cyan */
-  --global-hover-color: #fdea52; /* Color for hover states in light mode - cyan */
+  --global-hover-color: #79f9ff; /* Color for hover states in light mode - cyan */
   --global-hover-text-color: #{$white-color}; // Text color when hovering over accent elements
   --global-footer-bg-color: #dfdfdf; /* Footer background color - matches main background */
   --global-footer-text-color: #818181; /* Footer text color - black for contrast */
   --global-footer-link-color: #b7b7b7; /* Footer link color - white (may need adjustment) */
   --global-distill-app-color: #{$grey-color}; // Color for Distill.pub article elements
   --global-divider-color: #79f9ff; // Color for horizontal dividers/separators
-  --global-card-bg-color: #919191; // Background color for card elements
+  --global-card-bg-color: #a4a4a4; // Background color for card elements
   --global-highlight-color: #{$red-color-dark}; // Color for highlighted text/elements
   --global-back-to-top-bg-color: rgba(
     // Background color for back-to-top button
@@ -102,14 +102,14 @@ html[data-theme="dark"] {
   --global-text-color: #{$grey-color-light}; // Primary text color in dark mode
   --global-text-color-light: #{$grey-color}; // Secondary/muted text color in dark mode
   --global-theme-color: #69ffe6; /* Main accent color for dark mode - light cyan */
-  --global-hover-color: #fff391; /* Color for hover states in dark mode - light cyan */
+  --global-hover-color: #69ffe6; /* Color for hover states in dark mode - light cyan */
   --global-hover-text-color: #{$white-color}; // Text color when hovering over accent elements
   --global-footer-bg-color: #3e3e3e; /* Footer background color - matches main background */
   --global-footer-text-color: #{$grey-color-dark}; // Footer text color (should be white for contrast)
   --global-footer-link-color: #{$black-color}; // Footer link color
   --global-distill-app-color: #{$grey-color-light}; // Color for Distill.pub article elements
   --global-divider-color: #9fffef; // Color for horizontal dividers/separators in dark mode
-  --global-card-bg-color: #3a3a3a; // Background color for card elements in dark mode
+  --global-card-bg-color: #3e3e3e; // Background color for card elements in dark mode
   --global-back-to-top-bg-color: rgba(
     // Background color for back-to-top button
     #{color.channel($white-color, "red", $space: rgb)},

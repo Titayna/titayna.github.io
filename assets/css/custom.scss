@@ -124,3 +124,50 @@ span[style*="text-decoration: underline overline"] {
   color: var(--custom-span-color) !important; // Use theme-adaptive color variable
   text-decoration: underline overline !important; // Ensure both decorations are applied
 }
+
+// -----------------------------------------------------------------------------
+// 🎯 Default Card Title Color (Keeps theme hover effects via CSS variables)
+// -----------------------------------------------------------------------------
+
+@media (prefers-color-scheme: light) {
+  html body.fixed-top-nav div.card-body h2.card-title {
+    color: #fdea52;
+    transition: color 0.2s ease-in-out;
+  }
+
+  html body.fixed-top-nav div.card:hover h2.card-title {
+    color: var(--global-hover-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html body.fixed-top-nav div.card-body h2.card-title {
+    color: #fff391;
+    transition: color 0.2s ease-in-out;
+  }
+
+  html body.fixed-top-nav div.card:hover h2.card-title {
+    color: var(--global-hover-color);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 🎨 Card Description Text (p.card-text)
+// Applies custom color and oblique font style to descriptions inside cards.
+// -----------------------------------------------------------------------------
+
+@media (prefers-color-scheme: light) {
+  html body.fixed-top-nav div.card-body p.card-text {
+    color: #fbceff;
+    font-style: oblique;
+    transition: color 0.2s ease-in-out;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html body.fixed-top-nav div.card-body p.card-text {
+    color: #fbceff;
+    font-style: oblique;
+    transition: color 0.2s ease-in-out;
+  }
+}

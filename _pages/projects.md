@@ -5,7 +5,7 @@ permalink: /projects/
 description: 🚧 This section is under construction.
 nav: true
 nav_order: 3
-display_categories: [CURRENT]
+display_categories: [CURRENT, PAST]
 horizontal: false
 ---
 
