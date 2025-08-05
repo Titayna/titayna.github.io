@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Source code exhibition
-description: Heritagisation of code
+description:
 img:
 importance: 3
 category: CURRENT

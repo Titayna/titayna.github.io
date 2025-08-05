@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Ranke.2
-description: Teaching
+description:
 img:
-importance: 3
+importance: 4
 category: CURRENT
 ---
 
