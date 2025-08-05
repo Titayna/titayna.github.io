@@ -76,11 +76,6 @@ ninja.data = [{
           description: "Case study",
           section: "Projects",handler: () => {
               window.location.href = "/projects/apple-lisa/";
-            },},{id: "projects-a-post-with-tabs",
-          title: 'a post with tabs',
-          description: "this is what included tabs in a post could look like",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2024-05-01-tabs%20copy/";
             },},{id: "projects-love-letter-generator-1953",
           title: 'Love Letter Generator (1953)',
           description: "Case study 2",
