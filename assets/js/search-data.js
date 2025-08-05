@@ -73,7 +73,7 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "projects-apple-lisa-1983",
           title: 'Apple Lisa (1983)',
-          description: "Case study",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/apple-lisa/";
             },},{id: "projects-handwritten-text-recognition-and-the-notebooks-of-jean-henri-polier-de-vernand-1715-1791",
@@ -83,17 +83,17 @@ ninja.data = [{
               window.location.href = "/projects/cahiers_polier/";
             },},{id: "projects-source-code-exhibition",
           title: 'Source code exhibition',
-          description: "Heritagisation of code",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/exposition/";
             },},{id: "projects-love-letter-generator-1953",
           title: 'Love Letter Generator (1953)',
-          description: "Case study 2",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/love_letter/";
             },},{id: "projects-ranke-2",
           title: 'Ranke.2',
-          description: "Teaching",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ranke/";
             },},{id: "ressources-prompt-engineering-guidebook",
