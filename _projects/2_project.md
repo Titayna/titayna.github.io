@@ -5,6 +5,8 @@ description: Case study 2
 img:
 importance: 2
 category: CURRENT
+toc:
+  beginning: true
 ---
 
 ## 🚧 PAGE UNDER CONSTRUCTION.

@@ -1,4 +1,4 @@
----
+<!---
 layout: post
 title: a post with image galleries
 date: 2024-12-04 01:59:00
@@ -33,21 +33,25 @@ The images in this post are all zoomable, arranged into different mini-galleries
     <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
   </a>
   <!-- cropped thumbnail: -->
-  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg"
+
+<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg"
     data-pswp-width="1875"
     data-pswp-height="2500"
     data-cropped="true"
     target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
-  </a>
+<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+</a>
+
   <!-- data-pswp-src with custom URL in href -->
-  <a href="https://unsplash.com"
+
+<a href="https://unsplash.com"
     data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
     data-pswp-width="2500"
     data-pswp-height="1666"
     target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
-  </a>
+<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+</a>
+
   <!-- wrapped with any element: -->
   <div>
     <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"

@@ -10,6 +10,7 @@ images:
   compare: true
   slider: true
 ---
+-->
 
 This is an example post with advanced image components.
 
