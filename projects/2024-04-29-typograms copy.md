@@ -1,32 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html><body> <p>My first diagram!</p> <p>+—-+</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-typograms">+----+
-|    |---&gt; My first diagram!
+<!---
+layout: post
+title: a post with typograms
+date: 2024-04-29 23:36:10
+description: this is what included typograms code could look like
+tags: formatting diagrams
+categories: sample-posts
+typograms: true
+--->
+
+This is an example post with some [typograms](https://github.com/google/typograms/) code.
+
+````markdown
+```typograms
 +----+
-</code></pre> <p>Another example:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
-</span><span class="sb">.------------------------.
-|.----------------------.|
-||"https://example.com" ||
-|'----------------------'|
-| ______________________ |
-||                      ||
-||   Welcome!           ||
-||                      ||
-||                      ||
-||  .----------------.  ||
-||  | username       |  ||
-||  '----------------'  ||
-||  .----------------.  ||
-||  |"*******"       |  ||
-||  '----------------'  ||
-||                      ||
-||  .----------------.  ||
-||  |   "Sign-up"    |  ||
-||  '----------------'  ||
-||                      ||
-|+----------------------+|
-.------------------------.</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>which generates:</p> <pre><code class="language-typograms">.------------------------.
+|    |---> My first diagram!
++----+
+```
+````
+
+Which generates:
+
+```typograms
++----+
+|    |---> My first diagram!
++----+
+```
+
+Another example:
+
+````markdown
+```typograms
+.------------------------.
 |.----------------------.|
 ||"https://example.com" ||
 |'----------------------'|
@@ -48,4 +52,34 @@
 ||                      ||
 |+----------------------+|
 .------------------------.
-</code></pre> <p>For more examples, check out the <a href="https://google.github.io/typograms/#examples" rel="external nofollow noopener" target="_blank">typograms documentation</a>.</p> </body></html>
+```
+````
+
+which generates:
+
+```typograms
+.------------------------.
+|.----------------------.|
+||"https://example.com" ||
+|'----------------------'|
+| ______________________ |
+||                      ||
+||   Welcome!           ||
+||                      ||
+||                      ||
+||  .----------------.  ||
+||  | username       |  ||
+||  '----------------'  ||
+||  .----------------.  ||
+||  |"*******"       |  ||
+||  '----------------'  ||
+||                      ||
+||  .----------------.  ||
+||  |   "Sign-up"    |  ||
+||  '----------------'  ||
+||                      ||
+|+----------------------+|
+.------------------------.
+```
+
+For more examples, check out the [typograms documentation](https://google.github.io/typograms/#examples).
