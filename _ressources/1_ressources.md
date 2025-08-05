@@ -16,29 +16,11 @@ category: GUIDEBOOK
         /* Light Mode (Default) */
         :root {
             --theme-color: #ff0d8e;
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --text-light: #666666;
-            --card-bg: #f8f9fa;
-            --border-color: #e0e0e0;
-            --highlight-bg: rgba(255, 13, 142, 0.1);
-            --highlight-border: rgba(255, 13, 142, 0.3);
-            --secondary-highlight: rgba(105, 255, 230, 0.1);
-            --secondary-border: rgba(105, 255, 230, 0.3);
         }
 
         /* Dark Mode */
         html[data-theme="dark"] {
             --theme-color: #69ffe6;
-            --bg-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --text-light: #a0a0a0;
-            --card-bg: #2a2a2a;
-            --border-color: #404040;
-            --highlight-bg: rgba(105, 255, 230, 0.1);
-            --highlight-border: rgba(105, 255, 230, 0.3);
-            --secondary-highlight: rgba(255, 13, 142, 0.1);
-            --secondary-border: rgba(255, 13, 142, 0.3);
         }
 
         body {
@@ -47,8 +29,8 @@ category: GUIDEBOOK
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: var(--global-bg-color);
+            color: var(--global-text-color);
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
@@ -62,10 +44,16 @@ category: GUIDEBOOK
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
         html[data-theme="dark"] .hero-image img {
             box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-image a:hover img {
+            opacity: 0.8;
+            transform: scale(1.02);
         }
 
         .main-title {
@@ -76,7 +64,7 @@ category: GUIDEBOOK
         }
 
         .version-info {
-            color: var(--text-light);
+            color: var(--global-text-color-light);
             font-weight: 400;
             margin-bottom: 30px;
         }
@@ -98,17 +86,21 @@ category: GUIDEBOOK
         }
 
         .technique-header {
-            color: var(--text-color);
+            color: var(--global-text-color);
             font-weight: 600;
             margin: 20px 0 10px 0;
         }
 
         .key-insight {
-            background: var(--highlight-bg);
+            background: rgba(255, 13, 142, 0.1);
             border-left: 4px solid var(--theme-color);
             padding: 15px;
             margin: 20px 0;
             font-weight: 500;
+        }
+
+        html[data-theme="dark"] .key-insight {
+            background: rgba(105, 255, 230, 0.1);
         }
 
         .definition-list { margin: 15px 0; }
@@ -133,7 +125,7 @@ category: GUIDEBOOK
             position: absolute;
             left: 0;
             background: var(--theme-color);
-            color: var(--bg-color);
+            color: var(--global-bg-color);
             border-radius: 50%;
             width: 25px;
             height: 25px;
@@ -155,11 +147,16 @@ category: GUIDEBOOK
         }
 
         .highlight-box {
-            background: var(--secondary-highlight);
-            border: 1px solid var(--secondary-border);
+            background: rgba(105, 255, 230, 0.1);
+            border: 1px solid rgba(105, 255, 230, 0.3);
             border-radius: 8px;
             padding: 20px;
             margin: 20px 0;
+        }
+
+        html[data-theme="dark"] .highlight-box {
+            background: rgba(255, 13, 142, 0.1);
+            border: 1px solid rgba(255, 13, 142, 0.3);
         }
 
         .audience-grid {
@@ -170,7 +167,7 @@ category: GUIDEBOOK
         }
 
         .audience-card {
-            background: var(--card-bg);
+            background: var(--global-card-bg-color);
             border-radius: 8px;
             padding: 20px;
             border-left: 4px solid var(--theme-color);
@@ -214,22 +211,16 @@ category: GUIDEBOOK
         .divider {
             margin: 40px 0;
             border: none;
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid var(--global-divider-color);
         }
 
         .footer-text {
             font-style: italic;
             text-align: center;
-            color: var(--text-light);
-        }
-        .hero-image a img {
-    transition: opacity 0.3s ease, transform 0.3s ease;
+            color: var(--global-text-color-light);
         }
 
-        .hero-image a:hover img {
-            opacity: 0.8;
-            transform: scale(1.02);
-        }
+        /* Remove fallback section */
     </style>
 
 </head>
@@ -392,20 +383,4 @@ category: GUIDEBOOK
     <div>PDF guidebook with visual examples and practical examples</div>
     
     <div class="spec-label">Version:</div>
-    <div>2.0 (March 2025) - Updated with latest research</div>
-    
-    <div class="spec-label">Length:</div>
-    <div>Comprehensive coverage with practical examples</div>
-    
-    <div class="spec-label">Accessibility:</div>
-    <div>Designed for both technical and non-technical audiences</div>
-</div>
-
-<hr class="divider">
-
-<p class="footer-text">
-    This resource represents part of ongoing research into the intersection of artificial intelligence and humanities scholarship.
-</p>
-
-</body>
-</html>
+    <div>2.0 (March 2025)
