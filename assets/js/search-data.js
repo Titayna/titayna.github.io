@@ -76,26 +76,26 @@ ninja.data = [{
           description: "Case study",
           section: "Projects",handler: () => {
               window.location.href = "/projects/apple-lisa/";
-            },},{id: "projects-love-letter-generator-1953",
-          title: 'Love Letter Generator (1953)',
-          description: "Case study 2",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-ranke-2",
-          title: 'Ranke.2',
-          description: "Teaching",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-source-code-exhibition",
-          title: 'Source code exhibition',
-          description: "Heritagisation of code",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
             },},{id: "projects-handwritten-text-recognition-and-the-notebooks-of-jean-henri-polier-de-vernand-1715-1791",
           title: 'Handwritten Text Recognition and the Notebooks of Jean-Henri Polier de Vernand (1715-1791)',
           description: "Master Thesis Project of Digital Transcription of 26,300 Pages Through HTR Technology (2023)",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/projects/cahiers_polier/";
+            },},{id: "projects-source-code-exhibition",
+          title: 'Source code exhibition',
+          description: "Heritagisation of code",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/exposition/";
+            },},{id: "projects-love-letter-generator-1953",
+          title: 'Love Letter Generator (1953)',
+          description: "Case study 2",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/love_letter/";
+            },},{id: "projects-ranke-2",
+          title: 'Ranke.2',
+          description: "Teaching",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ranke/";
             },},{id: "ressources-prompt-engineering-guidebook",
           title: 'Prompt Engineering Guidebook',
           description: "A compact guide to writing prompts for generative AI models.",
