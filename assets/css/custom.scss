@@ -43,8 +43,43 @@ html body.fixed-top-nav .container .row .col {
 
 // Special typography for post titles (specifically for "About > Titaÿna Kauffmann" page)
 html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
-  // About > Titaÿna Kauffmann
   font-family: "Russo One", sans-serif !important; // Use Russo One for distinctive post title styling
+}
+
+// Light mode color
+@media (prefers-color-scheme: light) {
+  html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
+    color: #fdea52;
+  }
+}
+
+// Dark mode color
+@media (prefers-color-scheme: dark) {
+  html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
+    color: #fff391;
+  }
+}
+
+// Typography styling for navbar site title (top left)
+html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
+  font-family: "Russo One", sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 0.8em; // Makes the text slightly smaller
+}
+
+// Light mode color
+@media (prefers-color-scheme: light) {
+  html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
+    color: #f2de48;
+  }
+}
+
+// Dark mode color
+@media (prefers-color-scheme: dark) {
+  html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
+    color: #fff391;
+  }
 }
 
 // Special typography for navbar brand/site title
@@ -56,7 +91,7 @@ html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.f
 
 // Define color variables for light and dark modes
 :root {
-  --custom-span-color: #ca6bff; /* Light mode color - blue */
+  --custom-span-color: #f0d4ff; /* Light mode color - blue */
 }
 
 html[data-theme="dark"] {

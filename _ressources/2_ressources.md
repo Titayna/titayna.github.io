@@ -16,29 +16,11 @@ category: TEMPLATES
         /* Light Mode (Default) */
         :root {
             --theme-color: #ff0d8e;
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --text-light: #666666;
-            --card-bg: #f8f9fa;
-            --border-color: #e0e0e0;
-            --highlight-bg: rgba(255, 13, 142, 0.1);
-            --highlight-border: rgba(255, 13, 142, 0.3);
-            --secondary-highlight: rgba(105, 255, 230, 0.1);
-            --secondary-border: rgba(105, 255, 230, 0.3);
         }
 
         /* Dark Mode */
         html[data-theme="dark"] {
             --theme-color: #69ffe6;
-            --bg-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --text-light: #a0a0a0;
-            --card-bg: #2a2a2a;
-            --border-color: #404040;
-            --highlight-bg: rgba(105, 255, 230, 0.1);
-            --highlight-border: rgba(105, 255, 230, 0.3);
-            --secondary-highlight: rgba(255, 13, 142, 0.1);
-            --secondary-border: rgba(255, 13, 142, 0.3);
         }
 
         body {
@@ -47,8 +29,8 @@ category: TEMPLATES
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: var(--global-bg-color);
+            color: var(--global-text-color);
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
@@ -76,7 +58,7 @@ category: TEMPLATES
         }
 
         .subtitle {
-            color: var(--text-light);
+            color: var(--global-text-color-light);
             font-weight: 400;
             font-size: 1.1em;
             margin-bottom: 30px;
@@ -106,7 +88,7 @@ category: TEMPLATES
         }
 
         .component-card {
-            background: var(--card-bg);
+            background: var(--global-card-bg-color);
             border-radius: 8px;
             padding: 20px;
             border-left: 4px solid var(--theme-color);
@@ -147,11 +129,16 @@ category: TEMPLATES
         }
 
         .architecture-section {
-            background: var(--secondary-highlight);
-            border: 1px solid var(--secondary-border);
+            background: rgba(105, 255, 230, 0.1);
+            border: 1px solid rgba(105, 255, 230, 0.3);
             border-radius: 8px;
             padding: 25px;
             margin: 25px 0;
+        }
+
+        html[data-theme="dark"] .architecture-section {
+            background: rgba(255, 13, 142, 0.1);
+            border: 1px solid rgba(255, 13, 142, 0.3);
         }
 
         .workflow-list {
@@ -172,7 +159,7 @@ category: TEMPLATES
             position: absolute;
             left: 0;
             background: var(--theme-color);
-            color: var(--bg-color);
+            color: var(--global-bg-color);
             border-radius: 50%;
             width: 30px;
             height: 30px;
@@ -188,7 +175,7 @@ category: TEMPLATES
             grid-template-columns: 1fr 3fr;
             gap: 15px;
             margin: 20px 0;
-            background: var(--card-bg);
+            background: var(--global-card-bg-color);
             padding: 20px;
             border-radius: 8px;
         }
@@ -199,11 +186,15 @@ category: TEMPLATES
         }
 
         .integration-note {
-            background: var(--highlight-bg);
+            background: rgba(255, 13, 142, 0.1);
             border-left: 4px solid var(--theme-color);
             padding: 15px;
             margin: 20px 0;
             font-style: italic;
+        }
+
+        html[data-theme="dark"] .integration-note {
+            background: rgba(105, 255, 230, 0.1);
         }
 
         .theme-link {
@@ -219,13 +210,13 @@ category: TEMPLATES
         .divider {
             margin: 40px 0;
             border: none;
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid var(--global-divider-color);
         }
 
         .footer-text {
             font-style: italic;
             text-align: center;
-            color: var(--text-light);
+            color: var(--global-text-color-light);
         }
     </style>
 
@@ -244,14 +235,19 @@ category: TEMPLATES
 
 <p>A comprehensive Notion workspace designed to address the organizational complexities of doctoral research through integrated project management, data tracking, and academic workflow systematization.</p>
 
+<!-- # Zephyr Planner for PhD -->
+
 <div class="section-header">Template Architecture</div>
+<!-- ## Template Architecture -->
 
 <div class="architecture-section">
     <div class="subsection-header">Core Framework</div>
+    <!-- ### Core Framework -->
     <p>The Zephyr Planner implements a centralized database architecture that connects thesis management, research data, academic networking, and project tracking through Notion's relational database system. This structure supports the interdisciplinary and iterative nature of doctoral research.</p>
 </div>
 
 <div class="section-header">System Components</div>
+<!-- ## System Components -->
 
 <div class="component-grid">
     <div class="component-card">
@@ -322,6 +318,7 @@ category: TEMPLATES
 </div>
 
 <div class="section-header">Implementation Workflow</div>
+<!-- ## Implementation Workflow -->
 
 <ol class="workflow-list">
     <li><span style="font-weight: 600;">Template Duplication</span>: Standard Notion template duplication process into personal workspace</li>
@@ -332,6 +329,7 @@ category: TEMPLATES
 </ol>
 
 <div class="section-header">Technical Specifications</div>
+<!-- ## Technical Specifications -->
 
 <div class="specs-grid">
     <div class="spec-label">Template Versions:</div>
@@ -360,8 +358,10 @@ category: TEMPLATES
 </div>
 
 <div class="section-header">Implementation Considerations</div>
+<!-- ## Implementation Considerations -->
 
 <div class="subsection-header">Prerequisites</div>
+<!-- ### Prerequisites -->
 <ul class="feature-list">
     <li>Functional Notion account with database creation capabilities</li>
     <li>Basic familiarity with Notion's database and relation systems</li>
@@ -369,6 +369,7 @@ category: TEMPLATES
 </ul>
 
 <div class="subsection-header">Setup Process</div>
+<!-- ### Setup Process -->
 <ul class="feature-list">
     <li>Template duplication via Notion's standard duplication mechanism</li>
     <li>Database property customization based on specific research requirements</li>
@@ -376,6 +377,7 @@ category: TEMPLATES
 </ul>
 
 <div class="subsection-header">Maintenance Requirements</div>
+<!-- ### Maintenance Requirements -->
 <ul class="feature-list">
     <li>Regular database updates to maintain current project status</li>
     <li>Periodic review of task and milestone tracking accuracy</li>
