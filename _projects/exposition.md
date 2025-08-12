@@ -430,6 +430,19 @@ related_publications: true
                 margin-top: 10px;
             }
         }
+
+        /* References section styling */
+        .references-section {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--global-divider-color);
+        }
+
+        .references-section h3 {
+            color: var(--theme-color);
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
@@ -475,13 +488,16 @@ related_publications: true
 
 <div class="section-header">Project Overview</div>
 
-    {% quote abelson1984structure %}
-    Programs must be written for people to read, and only incidentally for machines to execute.
-    {% endquote %}
+<div class="quote-section">
+    <div class="quote-text">
+        "Programs must be written for people to read, and only incidentally for machines to execute."
+    </div>
+    <div class="quote-author">— Harold Abelson & Gerald Jay Sussman</div>
+</div>
 
-<p>I have the privilege of contributing to this innovative exhibition that explores source code as what the Software Heritage team calls "a rich tapestry of meaning" {% cite software_heritage_proposal %} revealing authorial intent, historical contexts, and creative expression. The project represents an exciting collaboration between Software Heritage, Inria (French National Institute for Research in Digital Science and Technology), UNESCO, and researchers from various disciplines, working together to develop new approaches to digital heritage preservation.</p>
+<p>I have the privilege of contributing to this innovative exhibition that explores source code as what the Software Heritage team calls "a rich tapestry of meaning" {% cite software_heritage_proposal --file references %} revealing authorial intent, historical contexts, and creative expression. The project represents an exciting collaboration between Software Heritage, Inria (French National Institute for Research in Digital Science and Technology), UNESCO, and researchers from various disciplines, working together to develop new approaches to digital heritage preservation.</p>
 
-<p>This initiative builds on work by many scholars in the field and connects to my own doctoral research on treating source code as historical source material. Working alongside the talented teams at Software Heritage and Inria, as well as fellow researchers, we're exploring how programming might be understood as cultural expression similar to other creative and intellectual endeavors.</p>
+<p>This initiative builds on work by many scholars in the field {% cite marino2006critical --file references %} and connects to my own doctoral research on treating source code as historical source material. Working alongside the talented teams at Software Heritage and Inria, as well as fellow researchers, we're exploring how programming might be understood as cultural expression similar to other creative and intellectual endeavors.</p>
 
 <div class="section-header">Exhibition Themes</div>
 
@@ -662,6 +678,12 @@ related_publications: true
     <a href="https://www.softwareheritage.org/2025/07/07/code-exhibit-unesco-cfp/" class="theme-link primary">☀︎ Call for Participation ☀︎</a>
     <a href="mailto:sourcecode-exhibit@inria.fr" class="theme-link">☀︎ Submit Proposal ☀︎</a>
     <a href="https://www.softwareheritage.org/" class="theme-link">☀︎ Software Heritage ☀︎</a>
+</div>
+
+<!-- References Section -->
+<div class="references-section">
+    <h3>References</h3>
+    {% bibliography --file references --cited %}
 </div>
 
 <p class="footer-text">
