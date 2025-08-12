@@ -171,3 +171,22 @@ html[data-theme="dark"] body.fixed-top-nav div.card-body p.card-text {
   font-style: oblique;
   transition: color 0.2s ease-in-out;
 }
+
+// -----------------------------------------------------------------------------
+// 🎨 Post header description styling (.desc)
+// -----------------------------------------------------------------------------
+
+// Targeting the specific .desc element in post headers
+html body.fixed-top-nav div.container.mt-5 div.post header.post-header p.desc {
+  font-family: "Russo One", sans-serif !important; // Use Russo One for distinctive styling
+}
+
+// Light mode color (default)
+html body.fixed-top-nav div.container.mt-5 div.post header.post-header p.desc {
+  color: #b6ffc8 !important;
+}
+
+// Dark mode color
+html[data-theme="dark"] body.fixed-top-nav div.container.mt-5 div.post header.post-header p.desc {
+  color: #ff81d4 !important;
+}
