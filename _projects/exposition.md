@@ -668,7 +668,6 @@ related_publications: true
 
 <p class="footer-text">
     Contributing to conversations about code, culture, and collaborative digital heritage exploration<br>
-    <em>A joint initiative of Software Heritage, Inria, and UNESCO</em>
 </p>
 
 </body>
