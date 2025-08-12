@@ -475,14 +475,9 @@ related_publications: true
 
 <div class="section-header">Project Overview</div>
 
-<div class="quote-section">
-    <div class="quote-text">
-        "Programs must be written for people to read, and only incidentally for machines to execute."
-    </div>
-    <div class="quote-author">
-        — Harold Abelson & Gerald Jay Sussman, 1984
-    </div>
-</div>
+    {% quote abelson1984structure %}
+    Programs must be written for people to read, and only incidentally for machines to execute.
+    {% endquote %}
 
 <p>I have the privilege of contributing to this innovative exhibition that explores source code as what the Software Heritage team calls "a rich tapestry of meaning" {% cite software_heritage_proposal %} revealing authorial intent, historical contexts, and creative expression. The project represents an exciting collaboration between Software Heritage, Inria (French National Institute for Research in Digital Science and Technology), UNESCO, and researchers from various disciplines, working together to develop new approaches to digital heritage preservation.</p>
 
