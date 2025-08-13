@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ranke.2
-description:
+description: 🚧 UNDER CONSTRUCTION
 img:
 importance: 4
 category: CURRENT
