@@ -73,7 +73,7 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "projects-apple-lisa-1983",
           title: 'Apple Lisa (1983)',
-          description: "🚧 PAGE UNDER CONSTRUCTION.",
+          description: "🚧 UNDER CONSTRUCTION",
           section: "Projects",handler: () => {
               window.location.href = "/projects/apple-lisa/";
             },},{id: "projects-handwritten-text-recognition-and-the-notebooks-of-jean-henri-polier-de-vernand-1715-1791",
@@ -88,7 +88,7 @@ ninja.data = [{
               window.location.href = "/projects/exposition/";
             },},{id: "projects-love-letter-generator-1953",
           title: 'Love Letter Generator (1953)',
-          description: "🚧 PAGE UNDER CONSTRUCTION.",
+          description: "🚧 UNDER CONSTRUCTION",
           section: "Projects",handler: () => {
               window.location.href = "/projects/love_letter/";
             },},{id: "projects-ranke-2",
