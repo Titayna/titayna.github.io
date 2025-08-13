@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Apple Lisa (1983)
-description: 🚧 PAGE UNDER CONSTRUCTION.
+description: 🚧 UNDER CONSTRUCTION
 img: /assets/img/apple_lisa.jpg
 permalink: /projects/apple-lisa/
 importance: 1
