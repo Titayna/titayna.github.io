@@ -2,7 +2,7 @@
 layout: page
 title: Love Letter Generator (1953)
 description:
-img: /assets/img/illustration_strachey.png
+img:
 importance: 2
 category: CURRENT
 toc:
