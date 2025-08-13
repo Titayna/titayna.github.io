@@ -83,7 +83,7 @@ ninja.data = [{
               window.location.href = "/projects/cahiers_polier/";
             },},{id: "projects-source-code-as-cultural-heritage-unesco-exhibition-2026",
           title: 'Source Code as Cultural Heritage - UNESCO Exhibition 2026',
-          description: "Contributing to a groundbreaking exhibition exploring source code as cultural artifact for Software Heritage&#39;s 10th anniversary at UNESCO headquarters",
+          description: "Contributing to an exhibition exploring source code as cultural artifact for Software Heritage&#39;s 10th anniversary at UNESCO headquarters",
           section: "Projects",handler: () => {
               window.location.href = "/projects/exposition/";
             },},{id: "projects-love-letter-generator-1953",
