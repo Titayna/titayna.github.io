@@ -93,7 +93,7 @@ ninja.data = [{
               window.location.href = "/projects/love_letter/";
             },},{id: "projects-ranke-2",
           title: 'Ranke.2',
-          description: "",
+          description: "🚧 UNDER CONSTRUCTION",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ranke/";
             },},{id: "ressources-prompt-engineering-guidebook",
