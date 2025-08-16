@@ -1,6 +1,29 @@
 {
+  "name": "cv-pdf-generator",
+  "version": "1.0.0",
+  "description": "Jekyll site with automated PDF generation for CV",
+  "main": "generate-cv-pdf.js",
+  "scripts": {
+    "pdf": "node generate-cv-pdf.js",
+    "pdf:production": "NODE_ENV=production node generate-cv-pdf.js --production",
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
+    "pdf:dev": "npm run dev & sleep 10 && npm run pdf && pkill -f jekyll"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "fs-extra": "^11.0.0"
+  },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.4.0",
     "prettier": "^3.1.1"
-  }
+  },
+  "keywords": [
+    "jekyll",
+    "cv",
+    "pdf",
+    "automation"
+  ],
+  "author": "Titaÿna Kauffmann",
+  "license": "MIT"
 }

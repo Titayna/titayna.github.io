@@ -4,7 +4,7 @@ title: Apple Lisa (1983)
 description: 🚧 UNDER CONSTRUCTION
 img: /assets/img/apple_lisa.jpg
 permalink: /projects/apple-lisa/
-importance: 1
+importance: 2
 category: CURRENT
 ---
 

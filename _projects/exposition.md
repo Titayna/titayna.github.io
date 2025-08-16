@@ -3,7 +3,7 @@ layout: page
 title: Source Code as Cultural Heritage - UNESCO Exhibition 2026
 description: Contributing to an exhibition exploring source code as cultural artifact for Software Heritage's 10th anniversary at UNESCO headquarters
 img:
-importance: 3
+importance: 1
 category: CURRENT
 published: true
 related_publications: true

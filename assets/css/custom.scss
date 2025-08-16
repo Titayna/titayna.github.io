@@ -1,141 +1,94 @@
 ---
 ---
 
-// Import Google Fonts for the custom typography system
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Russo+One&display=swap");
+// =============================================================================
+// 📦 FONT IMPORTS
+// =============================================================================
 
-/* No front matter or imports needed */
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Russo+One&family=Handjet:wght@400&display=swap");
+
+// =============================================================================
+// 🌐 GLOBAL FONT DEFAULTS
+// =============================================================================
 
 // Set Google Sans Code as the default monospace font for all basic HTML elements
-body, // Main document body
-p, // Paragraphs
-div, // Generic containers
-li, // List items
-span, // Inline text containers
-h1, // Main headings
-h2, // Secondary headings
-h3, // Tertiary headings
-h4, // Fourth-level headings
-h5, // Fifth-level headings
-h6, // Sixth-level headings
-a, // Links
-blockquote, // Quote blocks
-code, // Inline code
-pre, // Preformatted text blocks
-ul, // Unordered lists
-ol, // Ordered lists
-table, // Tables
-.navbar, // Navigation bar
+body,
+p,
+div,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+blockquote,
+code,
+pre,
+ul,
+ol,
+table,
+.navbar,
 footer {
-  // Page footer
-  font-family: "Google Sans Code", monospace !important; // Apply Google Sans Code to all elements with high priority
+  font-family: "Google Sans Code", monospace !important;
 }
 
-/* Specific font targeting for main content areas - ready to customize */
-.page-content, // Jekyll page content wrapper
-.post-content, // Jekyll post content wrapper
-main, // HTML5 main content element
-article, // HTML5 article element
+// Specific font targeting for main content areas
+.page-content,
+.post-content,
+main,
+article,
 html body.fixed-top-nav .container .row .col {
-  // Bootstrap column within fixed navigation layout
-  font-family: "Google Sans Code", monospace !important; /* Apply Google Sans Code to content areas - can be changed to any desired font */
+  font-family: "Google Sans Code", monospace !important;
 }
 
-// Special typography for post titles (specifically for "About > Titaÿna Kauffmann" page)
-html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
-  font-family: "Russo One", sans-serif !important; // Use Russo One for distinctive post title styling
-}
+// =============================================================================
+// 🎨 CSS VARIABLES FOR THEME COLORS (DARK MODE ONLY)
+// =============================================================================
 
-// Light mode color
-@media (prefers-color-scheme: light) {
-  html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
-    color: #fdea52;
-  }
-}
-
-// Dark mode color
-@media (prefers-color-scheme: dark) {
-  html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
-    color: #fff391;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// 🧭 Typography styling for navbar site title (top left corner)
-// -----------------------------------------------------------------------------
-
-html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
-  font-family: "Russo One", sans-serif !important; // Use Russo One for branding
-  text-transform: uppercase; // Make text uppercase
-  letter-spacing: -1px; // Slightly tighter letter spacing
-  font-size: 0.8em; // Smaller font size
-  font-weight: 800; // Apply semi-bold weight
-}
-
-// Light mode color
-@media (prefers-color-scheme: light) {
-  html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
-    color: #f2de48;
-  }
-}
-
-// Dark mode color
-@media (prefers-color-scheme: dark) {
-  html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
-    color: #fff391;
-  }
-}
-
-// Special typography for navbar brand/site title
-html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
-  font-family: "Russo One", sans-serif !important; // Use Russo One for site branding in navigation
-}
-
-/* Optimized styling for bold and underlined spans using CSS variables */
-
-// Define color variables for light and dark modes
 :root {
-  --custom-span-color: #f0d4ff; /* Light mode color - blue */
+  --custom-span-color: #c2abff; /* Use dark mode colors as default */
 }
 
-html[data-theme="dark"] {
-  --custom-span-color: #c2abff; /* Dark mode color - purple */
+// =============================================================================
+// 🏷️ NAVIGATION & BRANDING (DARK MODE COLORS ONLY)
+// =============================================================================
+
+// Navbar site title (top left corner)
+html body.fixed-top-nav header nav#navbar.navbar.navbar-light.navbar-expand-sm.fixed-top div.container a.navbar-brand.title.font-weight-lighter {
+  font-family: "Russo One", sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 0.8em;
+  font-weight: 800;
+  color: #fff391; /* Dark mode color only */
 }
 
-/* Bold spans - uses CSS variable that automatically adapts to theme */
-span[style*="font-weight: 700"], // Partial match for font-weight
-span[style="font-weight: 700;"] {
-  // Exact match for font-weight
-  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
-  font-weight: 700 !important; // Ensure bold weight is applied
+// =============================================================================
+// 📄 POST HEADERS & TITLES (DARK MODE COLORS ONLY)
+// =============================================================================
+
+// Post titles
+html body.fixed-top-nav div.container.mt-5 div.post header.post-header h1.post-title {
+  font-family: "Russo One", sans-serif !important;
+  color: #fff391; /* Dark mode color only */
 }
 
-/* Underlined spans - uses same CSS variable for consistent theming */
-span[style*="text-decoration: underline"] {
-  // Partial match for any underline
-  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
-  text-decoration: underline !important; // Ensure underline is applied
+// Post descriptions (.desc)
+html body.fixed-top-nav div.container.mt-5 div.post header.post-header p.desc {
+  font-family: "Russo One", sans-serif !important;
+  color: #ff81d4; /* Dark mode color only */
 }
 
-span[style="text-decoration: underline;"] {
-  // Exact match for simple underline
-  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
-  text-decoration: underline !important; // Ensure underline is applied
-}
+// =============================================================================
+// 🎯 CARD COMPONENTS (DARK MODE COLORS ONLY)
+// =============================================================================
 
-span[style*="text-decoration: underline overline"] {
-  // Match for double decoration
-  color: var(--custom-span-color) !important; // Use theme-adaptive color variable
-  text-decoration: underline overline !important; // Ensure both decorations are applied
-}
-
-// -----------------------------------------------------------------------------
-// 🎯 Default Card Title Color (Keeps theme hover effects via CSS variables)
-// -----------------------------------------------------------------------------
-
-// Light mode (default)
+// Card titles
 html body.fixed-top-nav div.card-body h2.card-title {
-  color: #ebbbff;
+  color: #9e88ff; /* Dark mode color only */
   transition: color 0.2s ease-in-out;
 }
 
@@ -143,50 +96,81 @@ html body.fixed-top-nav div.card:hover h2.card-title {
   color: var(--global-hover-color);
 }
 
-// Dark mode
-html[data-theme="dark"] body.fixed-top-nav div.card-body h2.card-title {
-  color: #9e88ff;
-  transition: color 0.2s ease-in-out;
-}
-
-html[data-theme="dark"] body.fixed-top-nav div.card:hover h2.card-title {
-  color: var(--global-hover-color);
-}
-
-// -----------------------------------------------------------------------------
-// 🎨 Card Description Text (p.card-text)
-// Applies custom color and oblique font style to descriptions inside cards.
-// -----------------------------------------------------------------------------
-
-// Light mode (default)
+// Card description text
 html body.fixed-top-nav div.card-body p.card-text {
-  color: #5f5f5f;
+  color: #d4d4d4; /* Dark mode color only */
   font-style: oblique;
   transition: color 0.2s ease-in-out;
 }
 
-// Dark mode
-html[data-theme="dark"] body.fixed-top-nav div.card-body p.card-text {
-  color: #d4d4d4;
-  font-style: oblique;
-  transition: color 0.2s ease-in-out;
+// =============================================================================
+// 🎮 SPECIAL SECTION HEADERS (HANDJET FONT)
+// =============================================================================
+
+// Project category headers (CURRENT, PAST, etc.)
+html body.fixed-top-nav div.container.mt-5 div.post article div.projects h2.category {
+  font-family: "Handjet", monospace !important;
+  font-weight: 400;
+  color: #ff77ea !important;
 }
 
-// -----------------------------------------------------------------------------
-// 🎨 Post header description styling (.desc)
-// -----------------------------------------------------------------------------
-
-// Targeting the specific .desc element in post headers
-html body.fixed-top-nav div.container.mt-5 div.post header.post-header p.desc {
-  font-family: "Russo One", sans-serif !important; // Use Russo One for distinctive styling
+// Bibliography headers
+html body.fixed-top-nav div.container.mt-5 div.post article div.publications h2.bibliography {
+  font-family: "Handjet", monospace !important;
+  font-weight: 400;
+  color: #ff77ea !important;
 }
 
-// Light mode color (default)
-html body.fixed-top-nav div.container.mt-5 div.post header.post-header p.desc {
-  color: #b6ffc8 !important;
+// CV section headers
+html body.fixed-top-nav div.container.mt-5 div.row div.col-sm-9 div.post article div.cv div.card.mt-3.p-3 h3.card-title.font-weight-medium {
+  font-family: "Handjet", monospace !important;
+  font-weight: 400;
+  color: #ff77ea !important;
+  text-transform: uppercase !important;
 }
 
-// Dark mode color
-html[data-theme="dark"] body.fixed-top-nav div.container.mt-5 div.post header.post-header p.desc {
-  color: #ff81d4 !important;
+// =============================================================================
+// 📝 TEXT FORMATTING (SPANS)
+// =============================================================================
+
+// Bold spans
+span[style*="font-weight: 700"],
+span[style="font-weight: 700;"] {
+  color: var(--custom-span-color) !important;
+  font-weight: 700 !important;
+}
+
+// Underlined spans
+span[style*="text-decoration: underline"] {
+  color: var(--custom-span-color) !important;
+  text-decoration: underline !important;
+}
+
+span[style="text-decoration: underline;"] {
+  color: var(--custom-span-color) !important;
+  text-decoration: underline !important;
+}
+
+span[style*="text-decoration: underline overline"] {
+  color: var(--custom-span-color) !important;
+  text-decoration: underline overline !important;
+}
+
+// =============================================================================
+// 💻 CODE BLOCKS
+// =============================================================================
+
+// Code block background styling
+html
+  body.fixed-top-nav
+  div.container.mt-5
+  div.post
+  article
+  div.clearfix
+  div
+  div.language-text.highlighter-rouge
+  div.highlight
+  div.code-display-wrapper
+  pre.highlight {
+  background-color: #767b804f !important;
 }

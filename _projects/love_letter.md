@@ -3,7 +3,7 @@ layout: page
 title: Love Letter Generator (1953)
 description: 🚧 UNDER CONSTRUCTION
 img:
-importance: 2
+importance: 3
 category: CURRENT
 toc:
   beginning: true
