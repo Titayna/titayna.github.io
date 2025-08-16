@@ -91,11 +91,6 @@ ninja.data = [{
           description: "🚧 UNDER CONSTRUCTION",
           section: "Projects",handler: () => {
               window.location.href = "/projects/love_letter/";
-            },},{id: "projects-ranke-2",
-          title: 'Ranke.2',
-          description: "🚧 UNDER CONSTRUCTION",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/ranke/";
             },},{id: "ressources-prompt-engineering-guidebook",
           title: 'Prompt Engineering Guidebook',
           description: "A compact guide to writing prompts for generative AI models.",
@@ -134,30 +129,4 @@ ninja.data = [{
         handler: () => {
           window.open("https://orcid.org/0009-0000-7139-4439", "_blank");
         },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+      },];
