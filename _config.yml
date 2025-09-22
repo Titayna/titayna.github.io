@@ -160,7 +160,7 @@ collections:
     output: true
   projects:
     output: true
-  ressources:
+  resources:
     output: true
 
 # -----------------------------------------------------------------------------
