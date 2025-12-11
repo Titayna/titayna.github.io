@@ -91,6 +91,16 @@ ninja.data = [{
           description: "🚧 UNDER CONSTRUCTION",
           section: "Projects",handler: () => {
               window.location.href = "/projects/love_letter/";
+            },},{id: "resources-prompt-engineering-guidebook",
+          title: 'Prompt Engineering Guidebook',
+          description: "A compact guide to writing prompts for generative AI models.",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/1_ressources/";
+            },},{id: "resources-notion-template-for-phd-planning",
+          title: 'Notion Template for PhD Planning',
+          description: "A customizable Notion planner designed to help PhD students track their research, deadlines, publications, and goals in one structured space.",
+          section: "Resources",handler: () => {
+              window.location.href = "/resources/2_ressources/";
             },},{
         id: 'social-email',
         title: 'email',
