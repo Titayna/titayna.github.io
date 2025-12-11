@@ -22,15 +22,15 @@ horizontal: false
     {% if page.horizontal %}
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2">
-        {% for resource in sorted_resources %}
-          {% include projects_horizontal.liquid project=resource %}
+        {% for project in sorted_resources %}
+          {% include projects_horizontal.liquid %}
         {% endfor %}
       </div>
     </div>
     {% else %}
     <div class="row row-cols-1 row-cols-md-3">
-      {% for resource in sorted_resources %}
-        {% include projects.liquid project=resource %}
+      {% for project in sorted_resources %}
+        {% include projects.liquid %}
       {% endfor %}
     </div>
     {% endif %}
@@ -43,15 +43,15 @@ horizontal: false
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-      {% for resource in sorted_resources %}
-        {% include projects_horizontal.liquid project=resource %}
+      {% for project in sorted_resources %}
+        {% include projects_horizontal.liquid %}
       {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for resource in sorted_resources %}
-      {% include projects.liquid project=resource %}
+    {% for project in sorted_resources %}
+      {% include projects.liquid %}
     {% endfor %}
   </div>
   {% endif %}
