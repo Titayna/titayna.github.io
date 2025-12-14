@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: PUBLICATIONS
-description: 🚧 This section is under construction.
+description: 
 nav: true
 nav_order: 2
 ---
